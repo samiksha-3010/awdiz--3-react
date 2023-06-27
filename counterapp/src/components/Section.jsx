@@ -1,15 +1,23 @@
+
 import { useState } from "react";
-
 function Section() {
+    const [isUserLogged, setIsUserLogged] = useState(false);
 
-    const [isUserLogged, setIsUserLogged] = useState(true);
-  
-  
+    // setIsUserLogged((isUserLogged) => isUserLogged = true);
     return (
         <div>
-            Section : {isUserLogged ? <button>Logout</button> : <button>Login</button>}
+            {/* Section : {isUserLogged == false ? <button>Logout</button> : <button>Login</button>} */}
+            Section : {isUserLogged ? <button>Login</button> : <button>Logout</button>}
         </div>
     )
 }
 
 export default Section;
+
+
+
+
+
+
+
+

@@ -21,9 +21,10 @@ function App(){
       <Route exact path='/' element={<Home />} />
       <Route exact path='/welcome' element={<Welcome/>} />
       <Route exact path='/footer' element={<Footer/>} />
+      <Route exact path='/Navbar'element={ <Navbar/>}/>
       </Routes>
   
-      <Navbar/>
+     
     
     </div>
   );
