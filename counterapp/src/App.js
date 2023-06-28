@@ -9,7 +9,7 @@ import Counter from'./components/Counter';
 import Section from './components/Section';
 import { Route, Routes } from 'react-router-dom';
 import Type1UseEffect from './components/Type1UseEffect';
-
+import Type2UseEffect from './components/Type2UseEffect';
 
 
 
@@ -19,7 +19,8 @@ function App(){
   return (
     <div>
       <Routes>
-      <Route exact path='/Type1UseEffect' element={<Type1UseEffect />} />
+      <Route exact path='/ Type2UseEffect' element={<Type2UseEffect />} />
+      <Route exact path='/ Type1UseEffect' element={<Type1UseEffect />} />
       <Route exact path='/changeSection' element={<Section />} />
       <Route exact path='/counter' element={<Counter />} />
       <Route exact path='/' element={<Home />} />
