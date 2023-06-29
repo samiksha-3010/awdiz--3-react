@@ -13,7 +13,7 @@ function Counter (){
     function subract(){
      setCounter((prevalue) => prevalue -1)
     }
-
+  
     return( 
 <div>
      <h1>Counter:{Counter}</h1>
@@ -24,3 +24,5 @@ function Counter (){
 }
 
 export default Counter;
+
+

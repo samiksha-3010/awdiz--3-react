@@ -6,22 +6,27 @@
     useEffect(() => {
         console.log("Inside  UseEffect")
     });
+
     function  addCounter() {
         setCounter((preValue) => preValue + 1)
 }
 function  addCounter() {
     setCounter((preValue) => preValue + 1)
 }
+// useEffect(() =>{
+
+// })
 
     return(
         <div>
             <h1>Type1UseEffect</h1>
-            <h1>(counter)</h1>
+            <h1>counter:{counter}</h1>
             <button onClick={addCounter}>Add counter</button>
-            <h1>(samiksha)</h1>
+            <h1>samiksha:{samiksha}</h1>
             <button onClick={addCounter}>Add samiksha</button>
         </div>
 
     )
  }
  export default Type1UseEffect;
+

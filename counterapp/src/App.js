@@ -19,8 +19,8 @@ function App(){
   return (
     <div>
       <Routes>
-      <Route exact path='/ Type2UseEffect' element={<Type2UseEffect />} />
-      <Route exact path='/ Type1UseEffect' element={<Type1UseEffect />} />
+      <Route exact path='/Type2UseEffect' element={<Type2UseEffect />} />
+      <Route exact path='/Type1UseEffect' element={<Type1UseEffect />} />
       <Route exact path='/changeSection' element={<Section />} />
       <Route exact path='/counter' element={<Counter />} />
       <Route exact path='/' element={<Home />} />
