@@ -10,6 +10,7 @@ import Section from './components/Section';
 import { Route, Routes } from 'react-router-dom';
 import Type1UseEffect from './components/Type1UseEffect';
 import Type2UseEffect from './components/Type2UseEffect';
+import Type3UseEffect from'/components/Type3UseEffect';
 
 
 
@@ -19,6 +20,7 @@ function App(){
   return (
     <div>
       <Routes>
+        <Routes exact path='/Type3UseEffect' element={<Type3UseEffect/>}/>
       <Route exact path='/Type2UseEffect' element={<Type2UseEffect />} />
       <Route exact path='/Type1UseEffect' element={<Type1UseEffect />} />
       <Route exact path='/changeSection' element={<Section />} />
