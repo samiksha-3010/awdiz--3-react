@@ -7,7 +7,7 @@ function Type3UseEffect(){
     const [ counter2, SetCounter2] = useState(10);
       
     useEffect(() =>{
-        console.log("Insid use effect")
+        console.log("Inside useEffect")
     },[counter] )
     return(
         <div>
@@ -20,5 +20,5 @@ function Type3UseEffect(){
         </div>
     )
 }
-export default Type3UseEffect;
+export default Type3UseEffect; 
 
