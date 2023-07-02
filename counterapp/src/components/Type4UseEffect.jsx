@@ -1,29 +1,4 @@
-// import { useEffect, useState } from "react";
 
-// const [counter1, SetCounter1] = useState(10);
-// const [counter2, SetCounter2] = useState(20);
-// const [counter3, SetCounter3] = useState(30);
-
-// useEffect(() => {
-//     console.log ("Inside Effect")
-// },[counter2, counter3 ]);
-
-// function Type4UseEffect (){
-     
-//     return(
-//         <div>
-//             <h1>Type4UseEffect</h1>
-//             <h1>counter1 : {counter1}</h1>
-//             <button onClick={() => SetCounter1((num) => num+1)}> +1 for counter 1</button>
-//             <h1>counter3 : {counter2}</h1>
-//             <button onClick={() => SetCounter2((num) => num+1)}> +1 for counter 1</button>
-//             <h1>counter1 : {counter3}</h1>
-//             <button onClick={() => SetCounter3((num) => num+1)}> +1 for counter 1</button>
-//         </div>
-//     )
-// }
-
-// export default Type4UseEffect;
 
 
 import { useEffect, useState } from "react";
@@ -34,11 +9,13 @@ function Type4UseEffect() {
     const [counter2, setCounter2] = useState(20);
     const [counter3, setCounter3] = useState(30);
 
-    const router = useNavigate();
+    const router = useNavigate();   
 
     useEffect(() => {
-        // it'll execute the the code on initial render of component
-        //    it'll execute the code on any dapendency changes 
+
+        // it will Excute the code on intainal Render og component
+        // it Will Excute the code on any depedency change
+     
         console.log("Inside effect")
         if (counter2 == 22) {
             router('/')

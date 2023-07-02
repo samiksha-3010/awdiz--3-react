@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Navbar from "./components/Navbar"
@@ -12,7 +11,11 @@ import Type1UseEffect from './components/Type1UseEffect';
 import Type2UseEffect from './components/Type2UseEffect';
 import Type3UseEffect from'./components/Type3UseEffect';
 import Type4UseEffect from'./components/Type4UseEffect';
-
+import Params from './components/01-07/Params';
+import Map from './components/01-07/Map';
+import Wrapper from'./components/01-07/Wrapper';
+import StyledCompo from'./components/01-07/StyledCompo';
+import SingleProduct from './components/01-07/Singleprodct';
 
 
 
@@ -21,6 +24,11 @@ function App(){
   return (
     <div>
       <Routes>
+      <Route exact path='/single-product/:swaraj' element={<SingleProduct />} />
+      <Route exact path='/styled-compo' element={<StyledCompo />} />
+      <Route exact path='/wrappper' element={<Wrapper />} />
+      <Route exact path='/Map' element={<Map/>}/>
+      <Route exact path='/Params' element={<Params/>} />
        <Route exact path='/Type4UseEffect' element={<Type4UseEffect/>} />
       <Route exact path='/Type3UseEffect' element={<Type3UseEffect/>}/>
       <Route exact path='/Type2UseEffect' element={<Type2UseEffect />} />
