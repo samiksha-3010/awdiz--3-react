@@ -18,6 +18,7 @@ import StyledCompo from './components/01-07/StyledCompo';
 import SingleProduct from './components/01-07/Singleprodct';
 import DeclerativeWay from './components/01-07/DeclerativeWay';
 import Xyz from "./../src/components/02-07/Xyz"
+import SinglePro from './components/02-07/SinglePro';
 
 
 
@@ -30,6 +31,7 @@ function App() {
   return (
     <div>
       <Routes>
+        <Route exact path='/singlePro' element={<SinglePro/>}/>
         <Route exact path='/xyz' element={<Xyz />} />
         <Route exact path='/declerative-way' element={<DeclerativeWay />} />
         <Route exact path='/single-product/:swaraj' element={<SingleProduct />} />
