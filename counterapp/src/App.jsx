@@ -19,6 +19,7 @@ import SingleProduct from './components/01-07/Singleprodct';
 import DeclerativeWay from './components/01-07/DeclerativeWay';
 import Xyz from "./../src/components/02-07/Xyz"
 import SinglePro from './components/02-07/SinglePro';
+import DynamicStyles from'./components/04-07/DynamicStyles'
 
 
 
@@ -31,6 +32,8 @@ function App() {
   return (
     <div>
       <Routes>
+      <Route exact path='/dynamic-styles' element={<DynamicStyles />} />
+        {/* <Route exact path='' */}
         <Route exact path='/singlePro' element={<SinglePro/>}/>
         <Route exact path='/xyz' element={<Xyz />} />
         <Route exact path='/declerative-way' element={<DeclerativeWay />} />
