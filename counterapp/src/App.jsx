@@ -20,7 +20,8 @@ import DeclerativeWay from './components/01-07/DeclerativeWay';
 import Xyz from "./../src/components/02-07/Xyz"
 import SinglePro from './components/02-07/SinglePro';
 import DynamicStyles from'./components/04-07/DynamicStyles'
-
+import DynamicClasses from './components/04-07/DynamicClasses';
+ import ChildernProp from './components/04-07/ChildernProp';
 
 
 
@@ -32,8 +33,10 @@ function App() {
   return (
     <div>
       <Routes>
+      <Route exact path='/children-prop' element={<ChildernProp />} />
+      <Route exact path='/dynamic-classes' element={<DynamicClasses />} />
+
       <Route exact path='/dynamic-styles' element={<DynamicStyles />} />
-        {/* <Route exact path='' */}
         <Route exact path='/singlePro' element={<SinglePro/>}/>
         <Route exact path='/xyz' element={<Xyz />} />
         <Route exact path='/declerative-way' element={<DeclerativeWay />} />

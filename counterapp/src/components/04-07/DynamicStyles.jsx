@@ -19,7 +19,7 @@ import React, {useState}  from "react";
 
  return (
     <div style={styles} onClick={handleButtonClick}>
-        click me to the and chenge the background
+        click me and chenge the background
     </div>
  )
 };
