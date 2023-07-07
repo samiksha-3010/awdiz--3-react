@@ -19,28 +19,21 @@ import SingleProduct from './components/01-07/Singleprodct';
 import DeclerativeWay from './components/01-07/DeclerativeWay';
 import Xyz from "./../src/components/02-07/Xyz"
 import SinglePro from './components/02-07/SinglePro';
-import DynamicStyles from'./components/04-07/DynamicStyles'
+import DynamicStyles from './components/04-07/DynamicStyles'
 import DynamicClasses from './components/04-07/DynamicClasses';
- import ChildernProp from './components/04-07/ChildernProp';
- import FormOne from './components/06-07/FormOne';
-
-
-
-
-
+import ChildernProp from './components/04-07/ChildernProp';
+import FromOne from './../src/components/06-07/FromOne';
 
 function App() {
   console.log("inside app")
   return (
     <div>
       <Routes>
-     
-      <Route exact path='/form-one' element={<FormOne />} />
-      <Route exact path='/children-prop' element={<ChildernProp />} />
-      <Route exact path='/dynamic-classes' element={<DynamicClasses />} />
-
-      <Route exact path='/dynamic-styles' element={<DynamicStyles />} />
-        <Route exact path='/singlePro' element={<SinglePro/>}/>
+        <Route exact path='/form-one' element={<FromOne/> }/>
+        <Route exact path='/children-prop' element={<ChildernProp />} />
+        <Route exact path='/dynamic-classes' element={<DynamicClasses />} />
+        <Route exact path='/dynamic-styles' element={<DynamicStyles />} />
+        <Route exact path='/singlePro' element={<SinglePro />} />
         <Route exact path='/xyz' element={<Xyz />} />
         <Route exact path='/declerative-way' element={<DeclerativeWay />} />
         <Route exact path='/single-product/:swaraj' element={<SingleProduct />} />
@@ -59,9 +52,6 @@ function App() {
         <Route exact path='/footer' element={<Footer />} />
         <Route exact path='/Navbar' element={<Navbar />} />
       </Routes>
-
-
-
     </div>
   );
 }
