@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Counter from './components/Counter';
 import Section from './components/Section';
-import { Route, Routes } from 'react-router-dom';
+import { Form, Route, Routes } from 'react-router-dom';
 import Type1UseEffect from './components/Type1UseEffect';
 import Type2UseEffect from './components/Type2UseEffect';
 import Type3UseEffect from './components/Type3UseEffect';
@@ -22,6 +22,7 @@ import SinglePro from './components/02-07/SinglePro';
 import DynamicStyles from'./components/04-07/DynamicStyles'
 import DynamicClasses from './components/04-07/DynamicClasses';
  import ChildernProp from './components/04-07/ChildernProp';
+ import FormOne from './components/06-07/FormOne';
 
 
 
@@ -33,6 +34,8 @@ function App() {
   return (
     <div>
       <Routes>
+     
+      <Route exact path='/form-one' element={<FormOne />} />
       <Route exact path='/children-prop' element={<ChildernProp />} />
       <Route exact path='/dynamic-classes' element={<DynamicClasses />} />
 
