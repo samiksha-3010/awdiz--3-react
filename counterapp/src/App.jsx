@@ -23,12 +23,21 @@ import DynamicStyles from './components/04-07/DynamicStyles'
 import DynamicClasses from './components/04-07/DynamicClasses';
 import ChildernProp from './components/04-07/ChildernProp';
 import FromOne from './../src/components/06-07/FromOne';
+import FromSingleState from'./components/08-07/FromSingleState';
+import UseCallback from './components/08-07/UseCallback';
+
+
+
+
+
 
 function App() {
   console.log("inside app")
   return (
     <div>
       <Routes>
+      <Route exact path='/use-callback' element={<UseCallback />} />
+        <Route exact path='from-single-state' element={<FromSingleState/>}/>
         <Route exact path='/form-one' element={<FromOne/> }/>
         <Route exact path='/children-prop' element={<ChildernProp />} />
         <Route exact path='/dynamic-classes' element={<DynamicClasses />} />
