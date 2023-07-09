@@ -25,7 +25,8 @@ import ChildernProp from './components/04-07/ChildernProp';
 import FromOne from './../src/components/06-07/FromOne';
 import FromSingleState from'./components/08-07/FromSingleState';
 import UseCallback from './components/08-07/UseCallback';
-
+import UseMemo from './components/09-07/UseMemo'
+import UseReduser from './components/09-07/UseReduser'
 
 
 
@@ -36,6 +37,8 @@ function App() {
   return (
     <div>
       <Routes>
+        <Route exact path='use-reducer' element={<UseReduser/>}/>
+        <Route exact path='use-memo' element={<UseMemo/>}/> 
       <Route exact path='/use-callback' element={<UseCallback />} />
         <Route exact path='from-single-state' element={<FromSingleState/>}/>
         <Route exact path='/form-one' element={<FromOne/> }/>
