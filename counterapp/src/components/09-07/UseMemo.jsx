@@ -12,11 +12,6 @@ const [counter, SetCounter] = useState(0)
     SetTodos([...todos, "New todo"])
 
  }
-
- 
-
-
- 
   return (
     <div>
         <h1>Expensive Calculation:{Number} </h1>
