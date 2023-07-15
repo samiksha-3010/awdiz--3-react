@@ -30,7 +30,11 @@ const Product = () => {
             <img src={singlProducts.image}/>
         </div>
 
-        <div  style={{ width: "50%", height: "700px", border: "5px solid blue"}}></div>
+        <div style={{ width: "50%", height: "700px", border: "5px solid blue"}}>
+        <h1>Name :{singlProducts.title}</h1>
+
+        <h2>Price : {singlProducts.price}</h2>
+        </div>
     </div>
   )
 }

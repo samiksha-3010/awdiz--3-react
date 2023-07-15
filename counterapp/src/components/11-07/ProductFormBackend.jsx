@@ -11,13 +11,12 @@ const  ProductFormBackend = ()=> {
         fetch('https://fakestoreapi.com/products')
         .then(res => res.json())
         .then(json=>setProducts (json))
-        .then (json => console.log(json))
+        .then (json => console.log(json))            
 
     },[])
     const   redirect = (id) =>{
         console.log(id,"-id")
         // alert ("working..")
-      
         router (`/product/${id}`)
 
     }
@@ -35,6 +34,7 @@ const  ProductFormBackend = ()=> {
               <h4 style={{ marginLeft: "20px" }} >Name : {pro.title}</h4 >
               <h3 style={{ marginLeft: "20px" }}>Price : {pro.price}Rs.</h3>
           </div>
+          
           
 
           ) )}

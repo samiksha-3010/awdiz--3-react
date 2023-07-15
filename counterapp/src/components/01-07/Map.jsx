@@ -18,3 +18,17 @@ const Map = (props) => {
 }
 
 export default Map;
+
+// import React from 'react'
+
+// const Map = () => {
+//     console
+
+//   return (
+//     <div>
+//         <button>Add User</button>
+//     </div>
+//   )
+// }
+
+// export default Map
