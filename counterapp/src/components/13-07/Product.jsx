@@ -5,7 +5,7 @@ import SingleProduct from '../01-07/Singleprodct';
 const Product = () => {
   
     const [products, setProducts] = useState([])
-    const [singlProducts,setSingleProducts] = useState({});
+    const [singlProducts,setSinglProducts] = useState({});
     const {id} = useParams();
        console.log(products, "- products")
 
@@ -18,16 +18,20 @@ const Product = () => {
     },[])
     useEffect (()=>{
         if(id && products.length){
-            const result= products.find((products) => products.id ==id);
-            console.log(result, "-result")
+            const result= products.find((product) => product.id ==id);
+            // console.log(result, "-result")
+            setSinglProducts(result)
         }
         
     },[id, products])
-    console.log(SingleProduct, "-singleProducts")
+
+
+    console.log(singlProducts, "-singleProducts")
+
   return (
     <div style={{display: 'flex', justifyContent: "space-around"}}>
         <div style={{ width:"45%", height: "400px", border: "5px solid red"}}>
-            <img  style={{ width: "100%", height: "100%" }} src=  {singlProducts.image}/>
+            <img  style={{ width: "100%", height: "100%" }} src={singlProducts.image}/>
         </div>
 
         <div style={{ width: "50%", height: "700px", border: "5px solid blue"}}>

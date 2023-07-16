@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Counter from './components/Counter';
 import Section from './components/Section';
-import { Form, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Type1UseEffect from './components/Type1UseEffect';
 import Type2UseEffect from './components/Type2UseEffect';
 import Type3UseEffect from './components/Type3UseEffect';
@@ -28,8 +28,10 @@ import UseCallback from './components/08-07/UseCallback';
 import UseMemo from './components/09-07/UseMemo'
 import UseReduser from './components/09-07/UseReduser';
 import ProductFormBackend from'./components/11-07/ProductFormBackend'
-import Product from './components/13-07/Product'
-
+import Product from './components/13-07/Product';
+import Login from './components/15-07/Login';
+import Register from './components/15-07/Register';
+ 
 
 
 
@@ -39,17 +41,19 @@ function App() {
   return (
     <div>
       <Routes>
+        <Route exact path='Register'element={<Register/>}/>
+        <Route exact path='/Login' element={<Login/>}/>
         <Route exact path='/product/:id' element={<Product />}/>
         <Route exact path='/product-from-backend' element={<ProductFormBackend/>}/> 
         <Route exact path='use-reducer' element={<UseReduser/>}/>
         <Route exact path='use-memo' element={<UseMemo/>}/> 
-      <Route exact path='/use-callback' element={<UseCallback />} />
+        <Route exact path='/use-callback' element={<UseCallback />} />
         <Route exact path='from-single-state' element={<FromSingleState/>}/>
         <Route exact path='/form-one' element={<FromOne/> }/>
         <Route exact path='/children-prop' element={<ChildernProp />} />
         <Route exact path='/dynamic-classes' element={<DynamicClasses />} />
         <Route exact path='/dynamic-styles' element={<DynamicStyles />} />
-        <Route exact path='/singlePro' element={<SinglePro />} />
+        <Route exact path='/singlePro' element={<SinglePro/>} />
         <Route exact path='/xyz' element={<Xyz />} />
         <Route exact path='/declerative-way' element={<DeclerativeWay />} />
         <Route exact path='/single-product/:swaraj' element={<SingleProduct />} />
