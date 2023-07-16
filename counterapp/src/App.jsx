@@ -67,7 +67,7 @@ function App() {
         <Route exact path='/Type1UseEffect' element={<Type1UseEffect />} />
         <Route exact path='/changeSection' element={<Section />} />
         <Route exact path='/counter' element={<Counter />} />
-        <Route exact path='/' element={<Home />} />
+        <Route exact path='/home' element={<Home />} />
         <Route exact path='/welcome' element={<Welcome />} />
         <Route exact path='/footer' element={<Footer />} />
         <Route exact path='/Navbar' element={<Navbar />} />

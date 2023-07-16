@@ -17,15 +17,17 @@ function Login (){
            for (let i = 0; i< users.length; i++ ){
             if (users[i].email == userData.email && users[i].password == userData.password) {         // re assign
                 flag = true;
-            }
-             
+                break;
+            } 
            }
            if (flag == false){
             return alert ("please check credentails..")
+           }else{
+            localStorage.setItem("Current-user", JSON.stringify(userData))
+            alert ("Login Sucessfull..");
+            setUserData({ email: "", password: "" })
+            router('/home')
            }
-           alert ("Login Sucessfull..");
-           setUserData({ email: "", password: "" })
-           router('/')
 
         }else{
             alert ("fill the all field....")

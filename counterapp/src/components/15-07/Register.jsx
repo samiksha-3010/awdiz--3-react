@@ -15,7 +15,12 @@ const Register = () => {
  
     if(userData.name && userData.email&& userData.password){
         const array = JSON.parse(localStorage. getItem ("User")) || [];
-        const userDataobj = {name:userData.name, email: userData.email,password: userData.password}
+        const userDataobj = {
+            name:userData.name,
+             email: userData.email,
+             password: userData.password,
+             cart:[]
+            };
          // console.log(array, "-array")
         array.push(userDataobj);
 
@@ -38,6 +43,7 @@ const Register = () => {
             <label>Password</label><br/>
             <input type='password' name='password' onChange={handleChange}/><br/>
             <input type='submit' value='Register'/><br/>
+
         </form>
 
     </div>
