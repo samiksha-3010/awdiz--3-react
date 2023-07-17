@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Map = (props) => {
     console.log(props.myUsers, "HOME")
     return (
@@ -21,14 +20,22 @@ export default Map;
 
 // import React from 'react'
 
-// const Map = () => {
-//     console
+// const Map = (props) => {
+//     console.log(props.myUsers, "Home")
 
 //   return (
+
 //     <div>
-//         <button>Add User</button>
-//     </div>
+//         {props.kuchBhi && props?. kuchBhi.map ((str)   => (
+//              <div key ={str}>
+//                 <h1>{key}</h1>
+
+//              </div>
+//         )) }
+//         <button onClick={() => props?.setMyUsers([...props.myUsers,"pooja"])}> add users</button>
+        
+//         </div>
 //   )
 // }
 
-// export default Map
+// export default Map;

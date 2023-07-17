@@ -4,22 +4,32 @@
 
 
 
-// import React from 'react';
+// import React from 'react'
 
+// import Styled from 'styled-components'
 
-// // const myData = require('./../../../data/myProducts.json');
-// import myData from './../../data/myProducts.json'
+// const StyledCompo = () => {
 
-// const DeclerativeWay = () => {
+//     const MyDiv = Styled.div`color: red; font-size: 56px;`;
+
 //     return (
-//         <div>
-//             {myData.map((product) => (
-//                 <div>
-//                     <h1> Name :  {product.name}</h1>
-//                     <h2>Description :{product.description}</h2>
-//                     <h2>Price : {product.price} Rs.</h2>
-//                 </div>
-//             ))}
-//         </div>)
+//         <MyDiv>hELLO</MyDiv>
+//     )
 // }
-// export default DeclerativeWay
+
+// export default StyledCompo;
+
+
+
+
+import React from 'react'
+// import DynamicStyles from '../04-07/DynamicStyles'
+
+const StyledCompo = () => {
+    const MyDiv = Styled.div`color: red; font-size: 56px;`
+  return (
+    <div>StyledCompo</div>
+  )
+}
+
+export default StyledCompo

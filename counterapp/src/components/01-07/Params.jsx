@@ -60,7 +60,7 @@ import { useNavigate } from 'react-router-dom'
 const Params = () => {
     const router = useNavigate()
     function goto(){
-        router ('./tanu  hyyyy  i miss you ')
+        router ('./tanu')
     }
   return (
     <div><button  onClick={goto}>click here  and go to importaant information</button>
@@ -70,3 +70,5 @@ const Params = () => {
 }
 
 export default Params
+
+
