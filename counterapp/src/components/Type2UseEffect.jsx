@@ -6,11 +6,13 @@ useEffect(() => {
 
 console.log("Inside useEffect")
 },[])
+
+function addCounter (){
+    setCounter ((preValue) => preValue+1)
+}
  useEffect(() => {
     alert ('welcome!')
  })
-
-
 //  useEffect(() => {  // it'll execute the code only on first render of component, (first time page open, hard refersh)
 //     // console.log("Inside useEffect"  )
 //     alert('Welcome!')
@@ -19,8 +21,7 @@ console.log("Inside useEffect")
 // useEffect(()=>{
 
 // },[])
-
-   function addCounter(){
+  function addCounter(){
     setCounter((preValue)=> preValue + 1)
    }
     return(

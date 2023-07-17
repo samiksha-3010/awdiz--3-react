@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+#register-style{
+    border: 2px solid black;
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+#register-style>h1{
+    color: red;
+    padding-right: 70px;
+}
+#button-type{
+    width: 70%;
+    height: 40px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+#button-type>input{
+    padding-left: 40px;
+    padding-top: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+}

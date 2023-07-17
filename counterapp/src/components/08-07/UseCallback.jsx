@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useState } from 'react'  
 import Todos from './Todos';
 
 
@@ -11,7 +11,6 @@ const UseCallback =() => {
         setTodos([...todos, "come in"])
     }, [todos])
     
-
   return (
     <div>
         <Todos todos= {todos} addTodo ={addTodo }/>
@@ -21,4 +20,4 @@ const UseCallback =() => {
   )
 }
 
-export default UseCallback
+export default UseCallback;

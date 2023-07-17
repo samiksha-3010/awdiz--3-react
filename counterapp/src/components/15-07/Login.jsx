@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Login.css'
 import { useNavigate } from "react-router-dom";
 
 function Login (){
@@ -36,14 +37,14 @@ function Login (){
     }
 
     return(
-        <div style={{ display: 'flex', justifyContent: "center" }}>
+        <div  id="register-style">
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>
             <label>Email</label><br/>
             <input type="name" name='email' onChange={handleChange}/><br/>
             <label>Password</label><br/>
             <input type="password" name='password' onChange={handleChange}/><br/>
-            <input type='submit' value='Login'/><br/>
+           <div id="button-type"><input type='submit' value='Login'/><br/></div>
           
         </form>
          </div>

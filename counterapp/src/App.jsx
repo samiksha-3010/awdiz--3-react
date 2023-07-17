@@ -56,7 +56,7 @@ function App() {
         <Route exact path='/dynamic-classes' element={<DynamicClasses />} />
         <Route exact path='/dynamic-styles' element={<DynamicStyles />} />
         <Route exact path='/singlePro' element={<SinglePro/>} />
-        <Route exact path='/xyz' element={<Xyz />} />
+        <Route exact path='/xyz' element={<Xyz />}/>
         <Route exact path='/declerative-way' element={<DeclerativeWay />} />
         <Route exact path='/single-product/:swaraj' element={<SingleProduct />} />
         <Route exact path='/styled-compo' element={<StyledCompo />} />
@@ -74,7 +74,7 @@ function App() {
         {/* <Route exact path='/footer' element={<Footer />} /> */}
        
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
 
     </div>
   );

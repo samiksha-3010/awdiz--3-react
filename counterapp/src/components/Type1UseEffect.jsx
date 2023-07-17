@@ -1,32 +1,57 @@
- import  {useEffect, useState} from "react";
- function Type1UseEffect(){
-    const [ counter, setCounter] = useState(0);
-    const[ samiksha, setSamiksha] = useState(87666);
+//  import  {useEffect, useState} from "react";
+//  function Type1UseEffect(){
+//     const [ counter, setCounter] = useState(0);
+//     const[ samiksha, setSamiksha] = useState(87666);
+//     useEffect(() => {
+//         console.log("Inside  UseEffect")
+//     });
+//     function  addCounter() {
+//         setCounter((preValue) => preValue + 1)
+// }
+// function  addCounter() {
+//     setCounter((preValue) => preValue + 1)
+// }
+// // useEffect(() =>{
+// // })
+//     return(
+//         <div>
+//             <h1>Type1UseEffect</h1>
+//             <h1>counter:{counter}</h1>
+//             <button onClick={addCounter}>Add counter</button>
+//             <h1>samiksha:{samiksha}</h1>
+//             <button onClick={addCounter}>Add samiksha</button>
+//         </div>
+//     )
+//  }
+//  export default Type1UseEffect;
 
-    useEffect(() => {
-        console.log("Inside  UseEffect")
+import React, { useEffect, useState } from 'react'
+
+const Type1UseEffect = () => {
+    const [ Counter, setCounter] = useState (0)
+    const [ Samiksha, setSamiksha] = useState (543)
+    useEffect (() =>{
+        console.log("Inside UseEffect")
     });
-
-    function  addCounter() {
-        setCounter((preValue) => preValue + 1)
+    function addCounter (){
+        setCounter ((preValue) => preValue+1)
+    }
+    function addCounter (){
+        setCounter ((preValue) => preValue-1)
+    }
+    useEffect (() =>{
+        console.log("Inside UseEffect")
+    })
+  return ( 
+    <div>
+        <h1>Type1UseEffect</h1>
+        <h1>Counter: {Counter}</h1>
+        <button  onClick={addCounter}>Add Counter</button>
+        <h1>Tanu: {Samiksha}</h1>
+        <button onClick={addCounter}>Add Samiksha</button>
+    </div>
+  )
 }
-function  addCounter() {
-    setCounter((preValue) => preValue + 1)
-}
-// useEffect(() =>{
 
-// })
-
-    return(
-        <div>
-            <h1>Type1UseEffect</h1>
-            <h1>counter:{counter}</h1>
-            <button onClick={addCounter}>Add counter</button>
-            <h1>samiksha:{samiksha}</h1>
-            <button onClick={addCounter}>Add samiksha</button>
-        </div>
-
-    )
- }
- export default Type1UseEffect;
+export default Type1UseEffect;
 
