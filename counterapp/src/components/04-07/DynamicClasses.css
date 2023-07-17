@@ -1,4 +1,4 @@
-.active-button {
+/* .active-button {
     background-color: green;
     color: white;
     border: none;
@@ -14,4 +14,25 @@
     padding: 10px;
     border-radius: 5px;
     cursor: not-allowed;
+} */
+
+.active-button {
+background-color: green;
+color: white;
+border: none;
+padding: 20px;
+border-radius: 5px;
+cursor: pointer;
+width: 100%;
+margin-top: 20px;
+}
+.inactive-button {
+    background-color: yellow;
+    color: black;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: not-allowed;
+    width: 100%;
+    margin-top: 20px;
 }

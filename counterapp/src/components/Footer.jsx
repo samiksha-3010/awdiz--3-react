@@ -1,7 +1,7 @@
 function  Footer (){
     return(
-        <div>
-            Footer
+        <div style={{border: 'black', backgroundColor: 'gray',width: '100%',height:'20%'}}>
+         <h1> this is a my footer page</h1>
         </div>
     )
 }

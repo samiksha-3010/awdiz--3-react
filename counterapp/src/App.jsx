@@ -40,7 +40,9 @@ function App() {
   console.log("inside app")
   return (
     <div>
+        <Navbar/>
       <Routes>
+      {/* <Route exact path='/Navbar' element={<Navbar />} /> */}
         <Route exact path='Register'element={<Register/>}/>
         <Route exact path='/Login' element={<Login/>}/>
         <Route exact path='/product/:id' element={<Product />}/>
@@ -69,9 +71,11 @@ function App() {
         <Route exact path='/counter' element={<Counter />} />
         <Route exact path='/home' element={<Home />} />
         <Route exact path='/welcome' element={<Welcome />} />
-        <Route exact path='/footer' element={<Footer />} />
-        <Route exact path='/Navbar' element={<Navbar />} />
+        {/* <Route exact path='/footer' element={<Footer />} /> */}
+       
       </Routes>
+      <Footer/>
+
     </div>
   );
 }

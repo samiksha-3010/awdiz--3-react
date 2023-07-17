@@ -62,28 +62,37 @@ const FromOne = () => {
                  }
          
             
-            alert("Datasubmitted!")
+            // alert("Datasubmitted!")
         }
     
 
   return (
-    <div style={{display: 'flex',justifyContent: 'center' }}>
+    <div style={{display: 'flex',justifyContent: 'center',border: 'black',width: '50%', height: '400px' }}>
    <form onSubmit={ SubmitData}>
-     <label>Name:</label>
-    <input onChange={toSetName} type='text' placeholder='Type your name....'/>  <br/>
+     <label >Name:</label>
+    <input style={{backgroundColor: 'gray', color: 'white'}} onChange={toSetName} type='text' placeholder='Type your name....'/>  <br/>
     <label>Email:</label>
-    <input onChange={toSetEmail}  type='email' placeholder='Type your email....'/> <br/>
+    <input  style={{backgroundColor: 'gray', color: 'white'}} onChange={toSetEmail}  type='email' placeholder='Type your email....'/> <br/>
     <lable>Password:</lable>
-    <input   onChange={toSetPassword}  type='password' placeholder='Type your Password...'/> <br/>
+    <input  style={{backgroundColor: 'gray', color: 'white'}}  onChange={toSetPassword}  type='password' placeholder='Type your Password...'/> <br/>
     <input type='Submit' value="Register"/>
-   
-
    </form>
    </div>
   )
 }
 
-export default FromOne
+export default FromOne;
+
+
+// import React from 'react'
+
+// const FromOne = () => {
+//   return (
+//     <div>FromOne</div>
+//   )
+// }
+
+// export default FromOne
 
 
 

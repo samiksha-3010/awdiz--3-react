@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import('Register.css')
+ import './Register.css'
 import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
@@ -34,7 +34,8 @@ const Register = () => {
     }
 }
   return (
-    <div id='register'>
+    <div id='register-style'>
+    {/* // <div style={{ display: 'flex', justifyContent: "center" }}> */}
         <h2>Register</h2>
         <form onSubmit={handleSubmit}>
             <label>Name</label><br/>
@@ -43,7 +44,7 @@ const Register = () => {
             <input type='email' name='email' onChange={handleChange}/><br/>
             <label>Password</label><br/>
             <input type='password' name='password' onChange={handleChange}/><br/>
-            <input type='submit' value='Register'/><br/>
+          <div id='button-type'> <input  type='submit' value='Register'/><br/></div>
 
         </form>
 

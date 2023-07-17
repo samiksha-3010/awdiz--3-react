@@ -1,12 +1,6 @@
 import React, { memo } from 'react'
-
-
-
     const Todos = ({ addTodo, todos }) => {
     console.log("Calling  todos component...")
-
-  
-
   return (
     <div>
         <h1>
@@ -15,11 +9,8 @@ import React, { memo } from 'react'
             ))}
         </h1>
         <button onClick={addTodo}>Add todo</button>
-
-
     </div>
   )
-            }
-
-
+  }
 export default memo(Todos);
+

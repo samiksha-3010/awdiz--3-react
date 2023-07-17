@@ -1,29 +1,58 @@
  
-import React, {useState}  from "react";
+// import React, {useState}  from "react";
 
- const DynamicStyles = () =>{
- const [backgroundColor, setBackgroundColor] = useState('red');
- const handleButtonClick = () =>{
-    backgroundColor('blue');
+//  const DynamicStyles = () =>{
+//  const [backgroundColor, setBackgroundColor] = useState('red');
+//  const handleButtonClick = () =>{
+//     backgroundColor('blue');
 
- };
- const styles ={
-    backgroundColor: backgroundColor,
-    color:'white',
-    padding: '10px',
-    borderRadius: '5px',
-    cursor: 'pointer'
+//  }
+//  const styles ={
+//     backgroundColor: backgroundColor,
+//     color:'white',
+//     padding: '10px',
+//     borderRadius: '5px',
+//     cursor: 'pointer'
 
- };
+//  };
 
 
- return (
-    <div style={styles} onClick={handleButtonClick}>
-        click me and chenge the background
-    </div>
- )
+//  return (
+//     <div style={styles} onClick={handleButtonClick}>
+//         click me and chenge the background
+//     </div>
+//  )
+// };
+
+//   export default DynamicStyles
+ 
+
+
+import React, { useState } from 'react'
+
+
+
+const DynamicStyles = () => {
+   const [backgroundColor, setBackgroundColor] = useState ("red")
+const handleButtonClick= ()=>{
+   backgroundColor('blue');
+}
+   const styles ={
+      backgroundColor: backgroundColor,
+          color:'white',
+          padding: '10px',
+          borderRadius: '5px',
+          cursor: 'pointer'
+
+   
 };
 
-  export default DynamicStyles
- 
+  return (
+    <div style={styles} onClick={handleButtonClick}>
+      click me and change tha background
+    </div>
+  )
+}
+
+export default DynamicStyles;
 

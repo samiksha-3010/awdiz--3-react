@@ -16,7 +16,7 @@ const UseCallback =() => {
     <div>
         <Todos todos= {todos} addTodo ={addTodo }/>
         <h1>counter:{counter} </h1>
-        <button onClick={() => setCounter((prevState) => prevState + 1)}> ADD  </button>
+        <button onClick={() => setCounter((prevState) => prevState + 1)}>ADD</button>
     </div>
   )
 }

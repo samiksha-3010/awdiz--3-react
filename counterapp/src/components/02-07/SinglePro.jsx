@@ -13,4 +13,4 @@ const SinglePro = () => {
     )
 }
 
-export default SinglePro
+export default SinglePro;

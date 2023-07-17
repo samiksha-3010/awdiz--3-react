@@ -36,7 +36,7 @@ function Login (){
     }
 
     return(
-        <div>
+        <div style={{ display: 'flex', justifyContent: "center" }}>
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>
             <label>Email</label><br/>

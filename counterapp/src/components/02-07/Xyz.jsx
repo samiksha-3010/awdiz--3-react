@@ -1,15 +1,36 @@
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+
+
  
- function Xyz(){
+//  function Xyz(){
+//     const route = useNavigate();
+//     function goTO (){
+//         route("/single-product/:swaraj")
+//     }
+//     return(
+//         <div>
+//             <button onClick={goTO}>goTo sign</button>
+//         </div>
+//     )
+//  }
+
+//  export default Xyz ;
+
+
+
+
+import { useNavigate } from "react-router-dom";
+function  Xyz(){
+
     const route = useNavigate();
-    function goTO (){
-        route("/single-product/:swaraj")
+    function goto(){
+        route ("'/single-product/:swaraj")
     }
     return(
-        <div>
-            <button onClick={goTO}>goTo sign</button>
+        <div> 
+            <button onClick={goto}>Go To Click</button>
         </div>
-    )
- }
 
- export default Xyz 
+    )
+}
+export default Xyz;
