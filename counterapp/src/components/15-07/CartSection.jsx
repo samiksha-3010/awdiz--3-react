@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const CartSection = () => {
     const [userCart, setUserCart] = useState ([]);
     const router = useNavigate ();
-    console.log(userCart, "-setUserCart")
+    console.log(userCart, "-userCart")
 
     useEffect (() =>{
   const user = JSON.parse (localStorage.getItem("Current-user"));
@@ -29,7 +29,7 @@ const CartSection = () => {
         <div style={{display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>/
          {userCart.length && userCart.map((pro) =>( 
              <div style={{ width: "22%",height: "650px",border: "1px solid black" ,padding: "30px"}}>
-             <img style={{width:"100%", height: "450px", }} src={pro.image} />
+             <img style={{width:"100%", height: "500px", }} src={pro.image} />
              <h4>Title: {pro.tittle}</h4>
              <h4>Price{pro.price}</h4>
          </div>

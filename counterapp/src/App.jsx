@@ -32,6 +32,7 @@ import Product from './components/13-07/Product';
 import Login from './components/15-07/Login';
 import Register from './components/15-07/Register';
 import CartSection from './components/15-07/CartSection'
+import Pratice from './components/practice  -  18/Pratice'
 
  
 
@@ -75,6 +76,7 @@ function App() {
         <Route exact path='/counter' element={<Counter />} />
         <Route exact path='/home' element={<Home />} />
         <Route exact path='/welcome' element={<Welcome />} />
+        <Route exact path='/pratice'element= {<Pratice/>} />
 
         {/* <Route exact path='/footer' element={<Footer />} /> */}
        

@@ -65,9 +65,9 @@ const Product = () => {
       </div>
 
       <div style={{ width: "50%", height: "700px", border: "5px solid blue" }}>
-        <h1>Name :{singlProducts.title}</h1>
+        <h1 style={{color: "red"}} >Name :{singlProducts.title}</h1>
         <h2>Price : {singlProducts.price}</h2>
-        <button onClick={addtocart}>add to cart</button>
+        <button style={{width: "20%",height:"40px" , backgroundColor: "pink" , color:"black" , textAlign: "centre"}} onClick={addtocart}>add to cart</button>
       </div>
     </div>
   );
