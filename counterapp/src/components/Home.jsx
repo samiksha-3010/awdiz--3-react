@@ -13,12 +13,12 @@ function Home(){
         }
     },[])
 
-    function logout(){
-         localStorage.removeItem("Current-user");
-         setIsUserLoggedIn(false)
-         alert("Logout Successful...")
+    // function logout(){
+    //      localStorage.removeItem("Current-user");
+    //      setIsUserLoggedIn(false)
+    //      alert("Logout Successful...")
 
-    }
+    // }
     function addCart() {
         if (isUserLoggedIn) {
             alert("You are logged in cart product")
@@ -30,9 +30,9 @@ function Home(){
         // <>
         <div style={{textAlign: 'center'}}>
           <h1>home page </h1>
-          <img style={{height: '10%',width: '50%'}} src='https://tse1.mm.bing.net/th?id=OIP.0E2rT394d7tQ9MymGH8mTgHaE8&pid=Api&rs=1&c=1&qlt=95&w=183&h=122'/>
+          {/* <img style={{height: '10%',width: '50%'}} src='https://tse1.mm.bing.net/th?id=OIP.0E2rT394d7tQ9MymGH8mTgHaE8&pid=Api&rs=1&c=1&qlt=95&w=183&h=122'/> */}
          <div>
-          { isUserLoggedIn  ? <button onClick={logout}>Logout</button>: <button onClick={()=>router('/login')}>Login</button>}
+          {/* { isUserLoggedIn  ? <button onClick={logout}>Logout</button>: <button onClick={()=>router('/login')}>Login</button>} */}
         </div>
         <button onClick={addCart} >Add to cart</button>
         {/* </> */}

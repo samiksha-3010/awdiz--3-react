@@ -5,12 +5,13 @@ const CartSection = () => {
     const [userCart, setUserCart] = useState ([]);
     const router = useNavigate ();
     console.log(userCart, "-userCart")
+    
 
     useEffect (() =>{
-  const user = JSON.parse (localStorage.getItem("Current-user"));
+  const user = JSON.parse(localStorage.getItem("Current-user"));
   if(user?.email){
-    const allUsers = JSON.parse (localStorage.getItem("Users"))
-    for (var i = 0; i < allUsers.length;i++){
+    const allUsers = JSON.parse(localStorage.getItem("User"))
+    for (var i = 0; i < allUsers.length; i++){
         if (allUsers[i].email == user.email && allUsers[i].password == user.password){
             setUserCart(allUsers[i].cart)
             break;
@@ -18,7 +19,7 @@ const CartSection = () => {
     }
      
   }else{
-    alert ("Plese login and watch all cart product")
+    alert("Plese login and watch all cart product")
     router('/login')
   }
     },[])

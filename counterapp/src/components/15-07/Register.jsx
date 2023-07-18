@@ -22,9 +22,14 @@ const Register = () => {
              password: userData.password,
              cart:[]
             };
-         // console.log(array, "-array")
-        array.push(userDataobj);
 
+        //  for(  var i =0; i<array.length; i ++ ){         ////              //email same alert
+        //     if( array)
+        //  }
+         // console.log(array, "-array")
+
+        array.push(userDataobj);
+        
         localStorage. setItem ('User',JSON.stringify(array))
         alert ("you registration successfell.......")
         router('/Login')
