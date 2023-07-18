@@ -31,6 +31,8 @@ import ProductFormBackend from'./components/11-07/ProductFormBackend'
 import Product from './components/13-07/Product';
 import Login from './components/15-07/Login';
 import Register from './components/15-07/Register';
+import CartSection from './components/15-07/CartSection'
+
  
 
 
@@ -43,7 +45,9 @@ function App() {
         <Navbar/>
       <Routes>
       {/* <Route exact path='/Navbar' element={<Navbar />} /> */}
+      
         <Route exact path='Register'element={<Register/>}/>
+        <Route exact path='cartsection'element={<CartSection/>}/>
         <Route exact path='/Login' element={<Login/>}/>
         <Route exact path='/product/:id' element={<Product />}/>
         <Route exact path='/product-from-backend' element={<ProductFormBackend/>}/> 
@@ -71,6 +75,7 @@ function App() {
         <Route exact path='/counter' element={<Counter />} />
         <Route exact path='/home' element={<Home />} />
         <Route exact path='/welcome' element={<Welcome />} />
+
         {/* <Route exact path='/footer' element={<Footer />} /> */}
        
       </Routes>

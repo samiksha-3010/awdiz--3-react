@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // import SingleProduct from '../01-07/Singleprodct';
 
 const Product = () => {
@@ -8,6 +9,7 @@ const Product = () => {
   const [products, setProducts] = useState([]);
   const [singlProducts, setSinglProducts] = useState({});
   const { id } = useParams();
+  const router = useNavigate ();
   //    console.log(products, "- products")
 
   useEffect(() => {
@@ -47,6 +49,8 @@ const Product = () => {
           break;
         }
       }
+      alert ("Product added for succesfull cart")
+      router ('/product-from-backend')
     } else {
       alert("you can add product before login");
     }
@@ -57,8 +61,7 @@ const Product = () => {
       <div style={{ width: "45%", height: "400px", border: "5px solid red" }}>
         <img
           style={{ width: "100%", height: "100%" }}
-          src={singlProducts.image}
-        />
+          src={singlProducts.image} />
       </div>
 
       <div style={{ width: "50%", height: "700px", border: "5px solid blue" }}>

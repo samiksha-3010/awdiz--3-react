@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -8,14 +7,13 @@ function Type4UseEffect() {
     const [counter3, setCounter3] = useState(30);
 
     const router = useNavigate();   
-
     useEffect(() => {
 
         // it will Excute the code on intainal Render og component
         // it Will Excute the code on any depedency change
         console.log("Inside effect")
         if (counter2 == 22) {
-            router('/')
+            router('/home')
         }
     }, [counter2, counter3]);
     return (
