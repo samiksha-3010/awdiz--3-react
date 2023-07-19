@@ -5,7 +5,6 @@ const CartSection = () => {
     const [userCart, setUserCart] = useState ([]);
     const router = useNavigate ();
     console.log(userCart, "-userCart")
-    
 
     useEffect (() =>{
   const user = JSON.parse(localStorage.getItem("Current-user"));
@@ -23,11 +22,11 @@ const CartSection = () => {
     router('/login')
   }
     },[])
-
   return (
     <div>
         <h2>My Cart Page</h2>
-        <div style={{display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>/
+        {/* <img style={{height: '10%',width: '50%'}}src='https://bpb-us-e1.wpmucdn.com/blogs.uoregon.edu/dist/d/11771/files/2016/10/Shopping-from-Huffington-post-1ka98ph.jpg'/> */}
+        <div style={{display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
          {userCart.length && userCart.map((pro) =>( 
              <div style={{ width: "22%",height: "650px",border: "1px solid black" ,padding: "30px"}}>
              <img style={{width:"100%", height: "500px", }} src={pro.image} />

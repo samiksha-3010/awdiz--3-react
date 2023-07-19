@@ -32,7 +32,6 @@ function Login (){
 
         }else{
             alert ("fill the all field....")
-
         }
     }
 

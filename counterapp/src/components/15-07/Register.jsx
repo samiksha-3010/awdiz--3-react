@@ -23,13 +23,12 @@ const Register = () => {
              cart:[]
             };
 
-        //  for(  var i =0; i<array.length; i ++ ){         ////              //email same alert
+        //  for(  var i =0; i<array.length; i ++ ){ 
         //     if( array)
         //  }
          // console.log(array, "-array")
 
         array.push(userDataobj);
-        
         localStorage. setItem ('User',JSON.stringify(array))
         alert ("you registration successfell.......")
         router('/Login')
@@ -40,7 +39,6 @@ const Register = () => {
 }
   return (
     <div id='register-style'>
-    {/* // <div style={{ display: 'flex', justifyContent: "center" }}> */}
         <h2>Register</h2>
         <form onSubmit={handleSubmit}>
             <label>Name</label><br/>

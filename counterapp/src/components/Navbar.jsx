@@ -23,18 +23,18 @@ function Navbar(){
         <div>
       
             <h2>Navbar</h2>
-            <div style={{ display: 'flex', justifyContent: "space-around", border: "2px solid black", width: '100%', textAlign: "center" }}>
+            <div style={{ display: 'flex', justifyContent: "space-around", border: "2px solid black", width: '100%', textAlign: "center" , backgroundColor:'black', color: "white" }}>
                 <div style={{ width: "10%" }}>Awdiz</div>
                 <div  style={{ display: 'flex', width: "80%", justifyContent: "right" }}>
                     { User?.email?
                    <>
-                    <h2>Product</h2>
+                    <h2 >Product</h2>
                     <h2 style={{ marginLeft: "10px" }}>Profile</h2>
                     <h2  onClick={logout} style={{ marginLeft: "10px" }}>Logout</h2>
                     <h2  onClick={() =>router ('/cartsection')} style={{ marginLeft: "10px" }}>cart</h2>
                     </>
                     :
-                    <h2 onClick={()=> router("/login")}>Login</h2>
+                    <h2  onClick={()=> router("/login")}>Login</h2>
                  
                     }
                 </div>

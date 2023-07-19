@@ -32,7 +32,6 @@ const  ProductFormBackend = ()=> {
               <h4 style={{ marginLeft: "20px" , color: 'red' }} >Name : {pro.title}</h4 >
               <h3 style={{ marginLeft: "20px" , color: 'red'}}>Price : {pro.price}Rs.</h3>
           </div>
-          
 
           ) )}
             </div>
