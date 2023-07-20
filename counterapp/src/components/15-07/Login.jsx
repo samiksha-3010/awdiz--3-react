@@ -1,8 +1,12 @@
 import { useState } from "react";
 import './Login.css'
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../Context/Auth.context";
 
 function Login (){
+    const  {state,login} = useContext (AuthContext);
+    // console.log(state, "state")
     const [userData, setUserData] = useState({email: "", password: ""});
     const router = useNavigate ();
 
@@ -25,7 +29,10 @@ function Login (){
             return alert ("please check credentails..")
            }else{
             localStorage.setItem("Current-user", JSON.stringify(userData))
+            login(userData);            //current user
             alert ("Login Sucessfull..");
+
+
             setUserData({ email: "", password: "" })
             router('/home')
            }
@@ -36,7 +43,7 @@ function Login (){
     }
 
     return(
-        <div  id="register-style">
+        <div id="register-style">
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>
             <label>Email</label><br/>

@@ -28,8 +28,8 @@ const CartSection = () => {
         {/* <img style={{height: '10%',width: '50%'}}src='https://bpb-us-e1.wpmucdn.com/blogs.uoregon.edu/dist/d/11771/files/2016/10/Shopping-from-Huffington-post-1ka98ph.jpg'/> */}
         <div style={{display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
          {userCart.length && userCart.map((pro) =>( 
-             <div style={{ width: "22%",height: "650px",border: "1px solid black" ,padding: "30px"}}>
-             <img style={{width:"100%", height: "500px", }} src={pro.image} />
+             <div style={{ width: "22%",height: "600px",border: "1px solid black" ,padding: "30px"}}>
+             <img style={{width:"100%", height: "400px", }} src={pro.image} />
              <h4>Title: {pro.tittle}</h4>
              <h4>Price{pro.price}</h4>
          </div>
@@ -39,4 +39,4 @@ const CartSection = () => {
   )
 }
 
-export default CartSection
+export default CartSection;
