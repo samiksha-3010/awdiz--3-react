@@ -22,7 +22,6 @@ function Navbar(){
     //     }
     // },[state] )
     // console.log(User)
-
     // function logout(){
     //     localStorage.removeItem("Current-user")
     //     setUser ({})

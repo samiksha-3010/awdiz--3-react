@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+
+
+ import React, { useState } from 'react';
  import './Register.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -25,7 +27,7 @@ const Register = () => {
 
         //  for(  var i =0; i<array.length; i ++ ){ 
         //     if( array)
-        //  }
+        //  }+-
          // console.log(array, "-array")
 
         array.push(userDataobj);
@@ -56,3 +58,5 @@ const Register = () => {
 }
 
 export default Register
+
+

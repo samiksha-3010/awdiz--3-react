@@ -5,7 +5,7 @@ import { AuthContext } from "../Context/Auth.context";
 
 
 function Home(){
-  const {state,login} = useContext(AuthContext);
+  const {state,login,logout} = useContext(AuthContext);
   console.log(state,"state from context in home file")
 
     const [isUserLoggedIn, setIsUserLoggedIn]= useState (false);
@@ -20,7 +20,7 @@ function Home(){
     // },[])
 
     useEffect(()=>{
-      console. log(state?.user?.email,"state?.user?.email")
+      console.log(state?.user?.email,"state?.user?.email")
       if(state?.user?.email){
         setIsUserLoggedIn(true)
       }else{
@@ -28,12 +28,12 @@ function Home(){
       }
     },[state])
 
-    function logout(){
-         localStorage.removeItem("Current-user");
-         setIsUserLoggedIn(false)
-         alert("Logout Successful...")
+    // function logout(){
+    //     //  localStorage.removeItem("Current-user");
+    //      setIsUserLoggedIn(false)
+    //      alert("Logout Successful...")
 
-    }
+    // }
     // function addCart() {
     //     if (isUserLoggedIn) {
     //         alert("You are logged in cart product")
@@ -44,8 +44,8 @@ function Home(){
     return(
         // <>
         <div style={{textAlign: 'center'}}>
-          <h1>This is a Awdiz Store  </h1>
-          <img style={{height: '10%',width: '50%'}} src='https://tse1.mm.bing.net/th?id=OIP.0E2rT394d7tQ9MymGH8mTgHaE8&pid=Api&rs=1&c=1&qlt=95&w=183&h=122'/>
+          <h1>This is a Awdiz Store </h1>
+          {/* <img style={{height: '10%',width: '50%'}} src='https://tse1.mm.bing.net/th?id=OIP.0E2rT394d7tQ9MymGH8mTgHaE8&pid=Api&rs=1&c=1&qlt=95&w=183&h=122'/> */}
          <div>
           { isUserLoggedIn  ? <button onClick={()=>logout()}>Logout</button>: <button onClick={()=>router('/login')}>Login</button>}
         </div>

@@ -28,7 +28,7 @@ function Login (){
            if (flag == false){
             return alert ("please check credentails..")
            }else{
-            localStorage.setItem("Current-user", JSON.stringify(userData))
+            // localStorage.setItem("Current-user", JSON.stringify(userData))
             login(userData);            //current user
             alert ("Login Sucessfull..");
 

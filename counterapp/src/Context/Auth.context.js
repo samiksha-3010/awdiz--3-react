@@ -15,7 +15,7 @@ function reducer (state, action){
 }
 const AuthProvider = ({children})=>{
     const [state, dispatch] = useReducer(reducer,initialState);
-    const login= (userData) =>{
+    const login= (userData) =>{ 
 
         localStorage.setItem("Current-user",JSON.stringify(userData))
         dispatch({
@@ -24,7 +24,6 @@ const AuthProvider = ({children})=>{
         })
     }
 
-    
     const logout = () =>{
         localStorage.removeItem("Current-user")
         dispatch ({type:'logout'})
@@ -34,7 +33,7 @@ const AuthProvider = ({children})=>{
         if(isUserPresent){
             dispatch({
                 type:'login',
-                playload: isUserPresent
+                payload: isUserPresent
             })
         }
     },[])
@@ -44,4 +43,4 @@ const AuthProvider = ({children})=>{
         </AuthContext.Provider>
     )
 }
-export default AuthProvider
+export default AuthProvider;
