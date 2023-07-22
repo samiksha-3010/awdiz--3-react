@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../Context/Auth.context";
 
 function Login (){
-    const  {state,login} = useContext (AuthContext);
+    const  {state,login,logout} = useContext (AuthContext);
     // console.log(state, "state")
     const [userData, setUserData] = useState({email: "", password: ""});
     const router = useNavigate ();

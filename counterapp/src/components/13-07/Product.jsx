@@ -19,7 +19,7 @@ const Product = () => {
   }, []);
 
   useEffect(() => {
-    if (id && products.length) {
+    if (id && products.length){
       const result = products.find((product) => product.id == id);
       // console.log(result, "-result")
       setSinglProducts(result);

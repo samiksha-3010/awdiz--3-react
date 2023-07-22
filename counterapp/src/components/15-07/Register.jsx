@@ -57,6 +57,72 @@ const Register = () => {
   )
 }
 
-export default Register
+export default Register;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react'
+// import { useNavigate } from 'react-router-dom';
+
+ 
+
+// const Register = () => {
+//     const [userData, setUserData] =  useState ({name: "",email:"",password: ""});
+//     const router = useNavigate ();
+    
+
+// const handleChange = (event)=>{
+// userData({... userData ,[event.target.name]: event.target.value})
+// console.log(userData,"-setuserdata");
+
+// }
+// const handleSubmit= (event) =>{
+//     event. preventDeafult();
+// }
+// if(userData.name && userData.email && userData.password ){
+//     const array = JSON.parse (localStorage.getItem ("User")) ||  []
+//     const userDataobj ={
+//         name:userData.name,
+//         email:userData.email,
+//         password:userData.password
+//     }
+
+//     console.log(array, "array");
+//     array.push(userData)
+//     localStorage.setItem(JSON.stringify(array))
+//     alert("your reg is sussecfull...")
+//     router('./login')
+// }else{
+//        alert ("please fill all field")
+// }
+
+//   return (
+//     <div>
+//       <h2>Register</h2>
+//       <from onSubmit={handleSubmit}>
+//         <lable>Name</lable><br/>
+//         <input type='text' name='name' onClick={handleChange}/><br/>
+//         <lable>Email</lable><br/>
+//         <input type='type' name='email'  onClick={handleChange}/><br/>
+//         <lable>Password</lable><br/>
+//         <input type='password' onClick={handleChange}/><br/>
+//         <input type='submit' value="Register"/>
+//       </from>
+//     </div>
+//   )
+// }
+
+// export default Register
 
 
