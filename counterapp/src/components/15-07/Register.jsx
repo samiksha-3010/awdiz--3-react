@@ -52,6 +52,7 @@ const Register = () => {
           <div id='button-type'> <input  type='submit' value='Register'/><br/></div>
 
         </form>
+    
 
     </div>
   )

@@ -31,9 +31,9 @@ import ProductFormBackend from'./components/11-07/ProductFormBackend'
 import Product from './components/13-07/Product';
 import Login from './components/15-07/Login';
 import Register from './components/15-07/Register';
-import CartSection from './components/15-07/CartSection'
-import Pratice from './components/practice  -  18/Pratice'
-
+import CartSection from './components/15-07/CartSection';
+import Pratice from './components/practice  -  18/Pratice';
+import Profile from './components/22-07/Profile';
  
 
 
@@ -46,7 +46,7 @@ function App() {
         <Navbar/>
       <Routes>
       {/* <Route exact path='/Navbar' element={<Navbar />} /> */}
-      
+         <Route exact path='profile'element ={Profile}/>
         <Route exact path='Register'element={<Register/>}/>
         <Route exact path='cartsection'element={<CartSection/>}/>
         <Route exact path='/Login' element={<Login/>}/>

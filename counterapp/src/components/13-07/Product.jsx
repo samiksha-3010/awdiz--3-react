@@ -44,6 +44,8 @@ const Product = () => {
       const users = JSON.parse(localStorage.getItem("User"));
       for (var i = 0; i < users.length; i++) {
         if (users[i].email == currentUserEmail) {
+
+             //check product for already
           users[i].cart.push(singlProducts);
           localStorage.setItem("User", JSON.stringify(users));
           break;
@@ -58,6 +60,7 @@ const Product = () => {
 
   return (
     <div style={{ display: "flex", justifyContent: "space-around" }}>
+      
       <div style={{ width: "45%", height: "400px", border: "5px solid red" }}>
         <img
           style={{ width: "100%", height: "100%" }}

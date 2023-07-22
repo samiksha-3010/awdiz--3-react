@@ -46,7 +46,7 @@ if(state?.user){
                     { User?.email?
                    <>
                     <h2 onClick={()=> router("/product-from-backend")} >Product</h2>
-                    <h2 style={{ marginLeft: "30px" }}>Profile</h2>
+                    <h2 style={{ marginLeft: "30px" }}  onClick={()=> router("/profile")}>Profile</h2>
                     <h2  onClick={logout} style={{ marginLeft: "30px" }}>Logout</h2>
                     <h2  onClick={() =>router ('/cartsection')} style={{ marginLeft: "30px" }}>cart</h2>
                     </>
