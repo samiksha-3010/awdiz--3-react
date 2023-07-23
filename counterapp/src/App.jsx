@@ -45,8 +45,8 @@ function App() {
     <div>
         <Navbar/>
       <Routes>
-      {/* <Route exact path='/Navbar' element={<Navbar />} /> */}
-         <Route exact path='profile'element ={Profile}/>
+    
+         <Route exact path='Profile'element ={Profile}/>
         <Route exact path='Register'element={<Register/>}/>
         <Route exact path='cartsection'element={<CartSection/>}/>
         <Route exact path='/Login' element={<Login/>}/>
@@ -78,7 +78,7 @@ function App() {
         <Route exact path='/welcome' element={<Welcome />} />
         <Route exact path='/pratice'element= {<Pratice/>} />
 
-        {/* <Route exact path='/footer' element={<Footer />} /> */}
+       
        
       </Routes>
       {/* <Footer/> */}
