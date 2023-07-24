@@ -34,6 +34,7 @@ import Register from './components/15-07/Register';
 import CartSection from './components/15-07/CartSection';
 import Pratice from './components/practice  -  18/Pratice';
 import Profile from './components/22-07/Profile';
+
  
 
 
@@ -45,10 +46,10 @@ function App() {
     <div>
         <Navbar/>
       <Routes>
-    
-         <Route exact path='Profile'element ={Profile}/>
-        <Route exact path='Register'element={<Register/>}/>
-        <Route exact path='cartsection'element={<CartSection/>}/>
+      
+        <Route exact path='Profile' element ={<Profile/>}/>
+        <Route exact path='Register' element={<Register/>}/>
+        <Route exact path='cartsection' element={<CartSection/>}/>
         <Route exact path='/Login' element={<Login/>}/>
         <Route exact path='/product/:id' element={<Product />}/>
         <Route exact path='/product-from-backend' element={<ProductFormBackend/>}/> 

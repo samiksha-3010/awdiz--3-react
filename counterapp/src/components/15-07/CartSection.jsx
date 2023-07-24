@@ -25,7 +25,7 @@ const CartSection = () => {
     for (var i = 0; i < allUsers.length; i++){
         if (allUsers[i].email == user.email && allUsers[i].password == user.password){
             setUserCart(allUsers[i].cart)
-            // break;
+            break;
         }
     }
      
