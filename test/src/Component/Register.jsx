@@ -27,9 +27,9 @@ const Register = () => {
         <h2>Register</h2>
         <form onSubmit={handleSubmit}>
             <lable>Name</lable><br/>
-            <input  value ={userData.name}type='text'name='name' onChange={handlechenge}/><br/>
+            <input value ={userData.name}type='text'name='name' onChange={handlechenge}/><br/>
             <lable>Email</lable><br/>
-            <input  value ={userData.email}type='email' name='email' onChange={handlechenge}/><br/>
+            <input value ={userData.email}type='email' name='email' onChange={handlechenge}/><br/>
             <lable>Password</lable><br/>
             <input value ={userData.password} type='password'name='password' onChange={handlechenge}/><br/>
             <input type='submit' value='register' /><br/>
@@ -39,3 +39,33 @@ const Register = () => {
 }
 
 export default Register;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,17 +10,17 @@ const Login = () => {
     const handlesubmit =(event)=>{
         event.preventDefault();
         if(userData.email && userData.password){
+          var  flag = false
             const allusers = JSON.parse(localStorage.getItem("Users"))
             for( var i=0; i< allusers.length; i ++ ){
             if (allusers [i].email == userData && allusers[i].password== userData){
                 localStorage.setItem("Current Users"); JSON.stringify(allusers[i])
+                flag = true
                 setUserData({email: "", password: ""})
                 toast ("login succesfull")
-
-
             }
             }
-
+           
         }else{
             toast("plese fill all field")
         }
@@ -41,3 +41,27 @@ const Login = () => {
 }
 
 export default Login
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -18,9 +18,11 @@ function App() {
       <Route exact path='register'element={<Register/>}/>
 
       </Routes>
-     
     </div>
   );
 }
 
 export default App;
+
+
+
