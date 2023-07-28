@@ -18,13 +18,18 @@ const Register = () => {
       user.push(userData);
       localStorage.setItem("User", JSON.stringify(user));
 
-        setUserData({name: "", email: "", password: ""});
+        setUserData({name: "", email: "", password: "",role: "buyer"});
         router("/login");
       toast.success("successfull..");
     } else {
       toast.error("plese fill all field... ");
     }
   };
+  function SelectRole (event) {
+console.log(event.target.value, "-role")
+setUserData({...userData,["role"]:event.target.value})
+  }
+  
   return (
     <div className="parent-1">
       <h2>Register</h2>
@@ -32,6 +37,11 @@ const Register = () => {
       <form onSubmit={handleSubmit}>
         <lable className= 'lable-name'>Name</lable> <br />
         <input className="input-style" value={userData.name} type="text" name="name" onChange={handlechange} /><br />
+        <lable>SlectRole</lable><br/>
+        <select onChange={SelectRole}>
+          <option value= "Buyer">Buyer </option>
+          <option value="Seller">Seller</option>
+        </select><br/>
         <lable className= 'lable-name' >Email</lable> <br />
          <input className="input-style" value={userData.email} type="email" name="email" onChange={handlechange}/> <br />
         <lable className= 'lable-name'>Password</lable> <br />

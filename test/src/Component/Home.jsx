@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AuthContext } from './Context/AuthContext'
+
 
 const Home = () => {
+  const {state,Logout} = useContext (AuthContext);
+  console.log(state)
   return (
-    <div>Home</div>
+    <div>Home{state?.user?.name}
+    <button onClick={Logout}>Logout</button>
+    </div>
+
   )
 }
 
