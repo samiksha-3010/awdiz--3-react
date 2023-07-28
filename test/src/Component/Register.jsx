@@ -30,35 +30,13 @@ const Register = () => {
       <h2>Register</h2>
 
       <form onSubmit={handleSubmit}>
-        <lable>Name</lable>
-        <br />
-        <input
-          value={userData.name}
-          type="text"
-          name="name"
-          onChange={handlechange}
-        />
-        <br />
-        <lable>Email</lable>
-        <br />
-        <input
-          value={userData.email}
-          type="email"
-          name="email"
-          onChange={handlechange}
-        />
-        <br />
-        <lable>Password</lable>
-        <br />
-        <input
-          value={userData.password}
-          type="password"
-          name="password"
-          onChange={handlechange}
-        />
-        <br />
-        <input type="submit" value="register" />
-        <br />
+        <lable className= 'lable-name'>Name</lable> <br />
+        <input className="input-style" value={userData.name} type="text" name="name" onChange={handlechange} /><br />
+        <lable className= 'lable-name' >Email</lable> <br />
+         <input className="input-style" value={userData.email} type="email" name="email" onChange={handlechange}/> <br />
+        <lable className= 'lable-name'>Password</lable> <br />
+        <input className="input-style" value={userData.password} type="password" name="password" onChange={handlechange}/> <br />
+        <input className="submit-data" type="submit" value="Register" /> <br />
       </form>
     </div>
   );

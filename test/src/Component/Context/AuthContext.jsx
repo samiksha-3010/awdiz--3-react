@@ -5,7 +5,7 @@ const initalState  = {user:null,}
 const reduser =  (state,action) =>{
     switch (action.type){
         case "Login":
-            return {user:payload,action}
+            return {user:action}
             case "Logout":
                 return {user:null}
                 default :
@@ -24,7 +24,7 @@ function Login(userData){
 }
 
     return (
-        <AuthContext.Provider value={ {state,Login,Logout}}>
+        <AuthContext.Provider value={ {state,Login}}>
             {children}
 
         </AuthContext.Provider>

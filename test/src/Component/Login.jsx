@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Login.css'
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
@@ -32,14 +33,14 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="parent-1" >
       <h2>Login</h2>
       <form onSubmit={handlesubmit}>
-        <lable>Email:</lable><br />
-        <input value={userData.email} type="email" name="email" onChange={handlechange} /> <br />
-        <lable>Password:</lable> <br />
-        <input value={userData.password} type="password" name="password" onChange={handlechange}/><br />
-        <input type="submit" value="login" />
+        <lable className='lable-email' >Email:</lable><br />
+        <input className="input-name" value={userData.email} type="email" name="email" onChange={handlechange} /> <br />
+        <lable className='lable-email' >Password:</lable> <br />
+        <input  className="input-name" value={userData.password} type="password" name="password" onChange={handlechange}/><br />
+        <input className="submit-data" type="submit" value="login" />
       </form>
     </div>
   );

@@ -14,6 +14,8 @@
     left: 0%;
     font-size: 25px;
     align-items: center;
+    background-color: black;
+    color: white;
     
 }
 .e-commers{
@@ -25,7 +27,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 8px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     align-items: center;
 }
 .Parent-first>div{
