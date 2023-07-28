@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.parent-1{
+    width: 40%;
+    height: 400px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: pink;
+}
+.parent-1>h2{
+    text-align: center;
+    font-size: 35px;
+}
+.parent-1>label>{
+    font-size: 30px;
+}

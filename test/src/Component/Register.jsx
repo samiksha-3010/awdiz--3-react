@@ -1,71 +1,67 @@
-import React, { useState } from 'react'
-import { toast } from 'react-hot-toast'
-
+import React, { useState } from "react";
+import { toast } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+import "./Register.css";
 const Register = () => {
-    const [userData, setUserData]= useState ({name: "", email: "", password:""})
-    // console.log(userData)
-    const handlechenge = (event) =>{
-        setUserData({...useState,[event.target.name]:event.target.value}) 
-    }
+  const [userData, setUserData] = useState({name: "", email: "", password: "",});
+  const router = useNavigate();
+  console.log(userData);
+  
+  const handlechange = (event) => {
+    setUserData({ ...userData, [event.target.name]: event.target.value });
+  };
 
-    const handleSubmit  = (event)=>{
-        event.preventDefault();
-        if(userData.name && userData.email  && userData.password){
-            const usersArray = [localStorage.getItem("Users")] || [];
-            usersArray.push(userData)
-            localStorage. setItem("Users",JSON.stringify(usersArray));
-            localStorage.setItem("users",usersArray)
-            setUserData({name: "", email: "", password:""})
-            toast.suscees ("susceccfull..")
-         
-        }else{
-            toast.error ("plese fill all field... ")
-        }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (userData.name && userData.email && userData.password) {
+      const user = JSON.parse(localStorage.getItem("User")) || [];
+      user.push(userData);
+      localStorage.setItem("User", JSON.stringify(user));
+
+        setUserData({name: "", email: "", password: ""});
+        router("/login");
+      toast.success("successfull..");
+    } else {
+      toast.error("plese fill all field... ");
     }
-  return ( 
-    <div>
-        <h2>Register</h2>
-        <form onSubmit={handleSubmit}>
-            <lable>Name</lable><br/>
-            <input value ={userData.name}type='text'name='name' onChange={handlechenge}/><br/>
-            <lable>Email</lable><br/>
-            <input value ={userData.email}type='email' name='email' onChange={handlechenge}/><br/>
-            <lable>Password</lable><br/>
-            <input value ={userData.password} type='password'name='password' onChange={handlechenge}/><br/>
-            <input type='submit' value='register' /><br/>
-        </form>
+  };
+  return (
+    <div className="parent-1">
+      <h2>Register</h2>
+
+      <form onSubmit={handleSubmit}>
+        <lable>Name</lable>
+        <br />
+        <input
+          value={userData.name}
+          type="text"
+          name="name"
+          onChange={handlechange}
+        />
+        <br />
+        <lable>Email</lable>
+        <br />
+        <input
+          value={userData.email}
+          type="email"
+          name="email"
+          onChange={handlechange}
+        />
+        <br />
+        <lable>Password</lable>
+        <br />
+        <input
+          value={userData.password}
+          type="password"
+          name="password"
+          onChange={handlechange}
+        />
+        <br />
+        <input type="submit" value="register" />
+        <br />
+      </form>
     </div>
-  )
-}
+  );
+};
 
 export default Register;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
