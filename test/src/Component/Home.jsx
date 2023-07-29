@@ -4,7 +4,7 @@ import { AuthContext } from './Context/AuthContext'
 
 const Home = () => {
   const {state,Logout} = useContext (AuthContext);
-  console.log(state)
+  // console.log(state)
   return (
     <div>Home{state?.user?.name}
     <button onClick={Logout}>Logout</button>

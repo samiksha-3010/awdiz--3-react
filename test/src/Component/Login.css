@@ -33,5 +33,13 @@
     background-color: black; 
     color: white;
     margin-left: 120px;
+         border-radius: 70px;
 
+}
+.register-style{
+     width: 60%;
+    height: 50px;
+    margin-left: 100px;
+        margin-top: 40px;
+        border-radius: 70px;
 }

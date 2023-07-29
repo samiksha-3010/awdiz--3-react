@@ -3,9 +3,9 @@ import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import "./Register.css";
 const Register = () => {
-  const [userData, setUserData] = useState({name: "", email: "", password: "",});
+  const [userData, setUserData] = useState({name: "", email: "", password: "",role: "buyer"});
   const router = useNavigate();
-  console.log(userData);
+  // console.log(userData);
   
   const handlechange = (event) => {
     setUserData({ ...userData, [event.target.name]: event.target.value });
@@ -18,7 +18,7 @@ const Register = () => {
       user.push(userData);
       localStorage.setItem("User", JSON.stringify(user));
 
-        setUserData({name: "", email: "", password: "",role: "buyer"});
+        setUserData({name: "", email: "", password: ""});
         router("/login");
       toast.success("successfull..");
     } else {
@@ -35,16 +35,16 @@ setUserData({...userData,["role"]:event.target.value})
       <h2>Register</h2>
 
       <form onSubmit={handleSubmit}>
-        <lable className= 'lable-name'>Name</lable> <br />
+        <lable className= 'lable-name'>Name:</lable> <br />
         <input className="input-style" value={userData.name} type="text" name="name" onChange={handlechange} /><br />
-        <lable>SlectRole</lable><br/>
+        <lable>SlectRole:</lable><br/>
         <select onChange={SelectRole}>
-          <option value= "Buyer">Buyer </option>
-          <option value="Seller">Seller</option>
+          <option value= "Buyer">Buyer:</option>
+          <option value="Seller">Seller:</option>
         </select><br/>
-        <lable className= 'lable-name' >Email</lable> <br />
+        <lable className= 'lable-name' >Email:</lable> <br />
          <input className="input-style" value={userData.email} type="email" name="email" onChange={handlechange}/> <br />
-        <lable className= 'lable-name'>Password</lable> <br />
+        <lable className= 'lable-name'>Password:</lable> <br />
         <input className="input-style" value={userData.password} type="password" name="password" onChange={handlechange}/> <br />
         <input className="submit-data" type="submit" value="Register" /> <br />
       </form>

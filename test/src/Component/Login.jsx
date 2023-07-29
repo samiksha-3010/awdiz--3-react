@@ -5,11 +5,11 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "./Context/AuthContext";
 
 const Login = () => {
-  const {state,Login} = useContext(AuthContext)
+  const {state,Login} = useContext(AuthContext);
 
   const [userData, setUserData] = useState({email: "",password: "" });
   const router = useNavigate ();
-  console.log(userData)
+  // console.log(userData)
   const handlechange = (event) => {
     setUserData({...userData,[event.target.name]: event.target.value });
   };
@@ -46,7 +46,9 @@ const Login = () => {
         <lable className='lable-email' >Password:</lable> <br />
         <input  className="input-name" value={userData.password} type="password" name="password" onChange={handlechange}/><br />
         <input className="submit-data" type="submit" value="login" />
+       
       </form>
+      <button className="register-style" onClick={() =>router("/register")}>Register</button>
     </div>
   );
 };
