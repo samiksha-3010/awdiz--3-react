@@ -46,7 +46,6 @@ const Login = () => {
         <lable className='lable-email' >Password:</lable> <br />
         <input  className="input-name" value={userData.password} type="password" name="password" onChange={handlechange}/><br />
         <input className="submit-data" type="submit" value="login" />
-       
       </form>
       <button className="register-style" onClick={() =>router("/register")}>Register</button>
     </div>
