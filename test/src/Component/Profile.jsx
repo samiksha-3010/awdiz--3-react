@@ -8,7 +8,7 @@ const Profile = () => {
         
             <label className='label'>Name: Samiksha</label><br/>
             {/* <input className='text' type='text' /><br/> */}
-            <label className='label'>Email: sami@gmail.com</label><br/>
+            <label className='label'>Email:sami@gmail.com</label><br/>
             {/* <input className='text' type='email'/><br/>
             <button className='button'>Edit Profile</button> */}
 

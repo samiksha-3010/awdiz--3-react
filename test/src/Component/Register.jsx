@@ -18,7 +18,7 @@ const Register = () => {
       user.push(userData);
       localStorage.setItem("User", JSON.stringify(user));
 
-        setUserData({name: "", email: "", password: ""});
+        setUserData({name: "", email: "", password: "",role: "buyer"});
         router("/login");
       toast.success("successfull..");
     } else {
@@ -42,7 +42,7 @@ setUserData({...userData,["role"]:event.target.value})
           <option value= "Buyer">Buyer:</option>
           <option value="Seller">Seller:</option>
         </select><br/>
-        <lable className= 'lable-name' >Email:</lable> <br />
+        <lable className= 'lable-name'>Email:</lable> <br />
          <input className="input-style" value={userData.email} type="email" name="email" onChange={handlechange}/> <br />
         <lable className= 'lable-name'>Password:</lable> <br />
         <input className="input-style" value={userData.password} type="password" name="password" onChange={handlechange}/> <br />

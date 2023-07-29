@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className='Parent-first'>
    
        <div>All Product</div> 
-       {userData?.role == "Seller"&&<div>Add Product</div>}
+       {userData?.role == "Seller"&&<div >Add Product</div>}
       {userData?.name && <div>Profile</div> }
       {userData?.name?
       <div onClick={Logout}>Logout</div>:
