@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { Router, useNavigation } from 'react-router-dom'
+import { Router, useNavigate, useNavigation } from 'react-router-dom'
 import { toast } from 'react-hot-toast'
 const AddProduct = () => {
     const [productData, setProductData] = useState({ name: "", price: "", image: "", category: "Other" });
+    const router = useNavigate();
 
     const handleChange = (event) => {
         setProductData({ ...productData, [event.target.name]: event.target.value })
@@ -14,7 +15,7 @@ const AddProduct = () => {
             productsArray.push(productData);
             localStorage.setItem("Products", JSON.stringify(productsArray))
             setProductData({ name: "", price: "", image: "", category: "Other" })
-            // Router('/all-products');
+            Router('/all-products');
             toast.success("Product added Successful.")
     }else{
         toast.error("please fill all field..")
@@ -28,7 +29,7 @@ function selectRole(event) {
     useEffect(() =>{
         const user = JSON.parse(localStorage.getItem("Current-User"))
         if(user){
-        if(user?.role=="Buyer" ){
+        if(user?.role=="Buyer"){
             toast.error("you are not a seller user..")
             Router('/')
         }
