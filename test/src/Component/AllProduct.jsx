@@ -39,4 +39,4 @@ setProducts(productsFromDb)
   )
 }
 
-export default AllProduct
+export default AllProduct;
