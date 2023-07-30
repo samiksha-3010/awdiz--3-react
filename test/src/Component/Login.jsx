@@ -1,17 +1,21 @@
 import React, { useContext, useState } from "react";
-import './Login.css'
+import "./Login.css";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "./Context/AuthContext";
 
 const Login = () => {
-  const {state,Login} = useContext(AuthContext);
+  const { state, Login } = useContext(AuthContext);
 
-  const [userData, setUserData] = useState({email: "",password: "" });
-  const router = useNavigate ();
+  const [userData, setUserData] = useState({
+    email: "",
+    password: "",
+    role: "",
+  });
+  const router = useNavigate();
   // console.log(userData)
   const handlechange = (event) => {
-    setUserData({...userData,[event.target.name]: event.target.value });
+    setUserData({ ...userData, [event.target.name]: event.target.value });
   };
   const handlesubmit = (event) => {
     event.preventDefault();
@@ -19,18 +23,21 @@ const Login = () => {
       var flag = false;
       const alluser = JSON.parse(localStorage.getItem("User"));
       for (var i = 0; i < alluser.length; i++) {
-        if (alluser[i].email == userData.email && alluser[i].password == userData.password) {
-          Login(alluser[i]);
+        if (
+          alluser[i].email == userData.email &&
+          alluser[i].password == userData.password
+        ) {
           localStorage.setItem("Current-User", JSON.stringify(alluser));
-          setUserData({ email: "", password: "" });
-          flag = true;
+          Login(alluser[i]);
+          setUserData({ email: "", password: "", role: "" });
           toast("login succesfull");
-          router('/')
+          router("/");
+          flag = true;
           // setUserData({ email: "", password: "" });
         }
-        // if (flag == false){
-        //      toast("registered details unmatch");
-        //     }
+        if (flag == false) {
+          toast("registered details unmatch");
+        }
       }
     } else {
       toast("plese fill all field");
@@ -38,16 +45,33 @@ const Login = () => {
   };
 
   return (
-    <div className="parent-1" >
+    <div className="parent-1">
       <h2>Login</h2>
       <form onSubmit={handlesubmit}>
-        <lable className='lable-email' >Email:</lable><br />
-        <input className="input-name" value={userData.email} type="email" name="email" onChange={handlechange} /> <br />
-        <lable className='lable-email' >Password:</lable> <br />
-        <input  className="input-name" value={userData.password} type="password" name="password" onChange={handlechange}/><br />
+        <lable className="lable-email">Email:</lable>
+        <br />
+        <input
+          className="input-name"
+          value={userData.email}
+          type="email"
+          name="email"
+          onChange={handlechange}
+        />{" "}
+        <br />
+        <lable className="lable-email">Password:</lable> <br />
+        <input
+          className="input-name"
+          value={userData.password}
+          type="password"
+          name="password"
+          onChange={handlechange}
+        />
+        <br />
         <input className="submit-data" type="submit" value="login" />
       </form>
-      <button className="register-style" onClick={() =>router("/register")}>Register</button>
+      <button className="register-style" onClick={() => router("/register")}>
+        Register
+      </button>
     </div>
   );
 };

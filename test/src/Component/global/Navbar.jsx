@@ -19,12 +19,12 @@ const Navbar = () => {
       <div className='e-commers'>E-Commers</div>
       <div className='Parent-first'>
    
-       <div>All Product</div> 
+       <div onClick={()=>router('/all-product')}>All Product</div> 
        {userData?.role == "Seller"&&<div onClick={()=>router('/add-product')} >Add Product</div>}
-      {userData?.name && <div>Profile</div> }
+      {userData?.name && <div  onClick={()=>router('/profile')}>Profile</div> }
       {userData?.name?
       <div onClick={Logout}>Logout</div>:
-      <div>Login/Register</div>}
+      <div  onClick={()=>router('/login')}>Login/Register</div>}
 
       </div>
     </div>

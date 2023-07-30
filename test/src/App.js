@@ -8,6 +8,7 @@ import Register from './Component/Register';
 import Profile from './Component/Profile';
 import AllProduct from './Component/AllProduct';
 import AddProduct from './Component/AddProduct';
+import Cart from './Component/Cart';
 
 
 
@@ -22,6 +23,8 @@ function App() {
       <Route exact path='/profile'element={<Profile/>}/>
       <Route exact path='/add-product'element={<AddProduct/>}/> 
       <Route exact path='/all-product'element={<AllProduct/>}/> 
+      <Route exact path='/cart'element={<Cart/>}/> 
+
       </Routes>
     </div>
   );
