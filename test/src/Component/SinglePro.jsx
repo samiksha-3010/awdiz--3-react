@@ -112,13 +112,13 @@ function handleSubmit (event) {
     <input type='text' name="price"value={productData.price } onChange={handlechange}/><br/>
     <lable>Product Cetegory:</lable><br/>
     <input type='text' name="price"value={productData.cetegory } onChange={slectRole}/><br/>
-  <slect onChange={slectRole}>
+  <select onChange={slectRole}>
     <option value="other">other</option>
     <option value="mens">mens</option>
     <option value="women">women</option>
     <option value="kids">kids</option>
     <option  value="electronic">electronic</option>
-  </slect><br/>
+  </select><br/>
     <lable>Product image :</lable><br/>
     <input type='text' name="image"value={productData.image} onChange={handlechange}/><br/>
     <input type='submit' value="update profile"/>
@@ -131,13 +131,13 @@ function handleSubmit (event) {
         <h2>Price:{single.price} </h2>
         <p>Cetegory:{single.Cetegory}</p>
       </div>
-     {userData? role === "seller" ? (
+     {userData?. role === "seller" ? (
       <div>
         <button onClick={Update}>Update</button>
      
-      </div>
-    ):(    
-      <div>  
+      </div>)
+    :   
+       (<div> 
         
          <button onClick={addcart}>add to cart</button>
       

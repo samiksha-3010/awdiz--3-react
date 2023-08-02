@@ -30,7 +30,7 @@ const AllProduct = () => {
         <div style={{ display: "flex", justifyContent: "space-around"  }}>
           {products &&
             products.map((pro) => (
-              <div style={{ width: "25%", border: "2px solid red" }}  key={products.name}>
+              <div  onClick={redirect} style={{ width: "25%", border: "2px solid red" }}  key={products.name}>
                 <img style={{ width: "23%", border: "2px solid red" ,flexWrap: "wrap",width: "100%",height:"200px" ,display: "flex", justifyContent: "space-around" }}  src={pro.image} />
                 <h3>Name: {pro.Name}</h3>
                 <h4>Cetegery: {pro.Cetegery}</h4>
