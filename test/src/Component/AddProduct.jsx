@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Router, useNavigate, useNavigation } from 'react-router-dom'
 import { toast } from 'react-hot-toast'
+import { v4 as uuidv4 } from 'uuid';
+
+
 const AddProduct = () => {
     const [productData, setProductData] = useState({ name: "", price: "", image: "", category: "Other" });
     const router = useNavigate();
@@ -12,10 +15,13 @@ const AddProduct = () => {
         event.preventDefault();
         if (productData.name && productData.price && productData.image && productData.category) {
             const productsArray = JSON.parse(localStorage.getItem("Products")) || [];
+
+            const randomId = uuidv4();
+           productData["id"] = randomId;
             productsArray.push(productData);
             localStorage.setItem("Products", JSON.stringify(productsArray))
             setProductData({ name: "", price: "", image: "", category: "Other" })
-            Router('/all-products');
+            router('/all-products');
             toast.success("Product added Successful.")
     }else{
         toast.error("please fill all field..")
@@ -60,8 +66,15 @@ function selectRole(event) {
                 <input type='submit' value='Add Product' /><br />
             </form>
     </div>
-    
   )
 }
 
 export default AddProduct;
+
+
+
+
+
+
+
+

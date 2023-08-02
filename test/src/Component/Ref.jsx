@@ -94,7 +94,6 @@ function Ref() {
     useEffect(() => {
         renderCount.current = renderCount.current + 1;
     })
-
     return (
         <>
             <h1>Render count - {renderCount.current}</h1>

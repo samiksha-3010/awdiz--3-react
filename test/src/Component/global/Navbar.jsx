@@ -23,8 +23,11 @@ const Navbar = () => {
        {userData?.role == "Seller"&&<div onClick={()=>router('/add-product')} >Add Product</div>}
       {userData?.name && <div  onClick={()=>router('/profile')}>Profile</div> }
       {userData?.name?
+      // <div onClick={cart}>Cart</div>
       <div onClick={Logout}>Logout</div>:
       <div  onClick={()=>router('/login')}>Login/Register</div>}
+       
+     
 
       </div>
     </div>

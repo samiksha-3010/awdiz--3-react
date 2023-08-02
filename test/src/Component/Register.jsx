@@ -20,6 +20,8 @@ const Register = () => {
     event.preventDefault();
     if (userData.name && userData.email && userData.password) {
       const user = JSON.parse(localStorage.getItem("User")) || [];
+     
+
       user.push(userData);
       localStorage.setItem("User", JSON.stringify(user));
 

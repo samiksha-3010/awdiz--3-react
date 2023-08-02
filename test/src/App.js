@@ -10,6 +10,7 @@ import AllProduct from './Component/AllProduct';
 import AddProduct from './Component/AddProduct';
 import Cart from './Component/Cart';
 import Ref from './Component/Ref';
+import SinglePro from './Component/SinglePro';
 
 
 
@@ -26,6 +27,8 @@ function App() {
       <Route exact path='/all-product'element={<AllProduct/>}/> 
       <Route exact path='/cart'element={<Cart/>}/> 
       <Route exact path='/ref'element={<Ref/>}/> 
+      <Route exact path='/single'element={<SinglePro/>}/> 
+
 
       </Routes>
     </div>
