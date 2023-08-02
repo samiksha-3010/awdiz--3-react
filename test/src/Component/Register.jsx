@@ -51,9 +51,9 @@ const Register = () => {
           onChange={handlechange}
         />
         <br />
-        <lable>SlectRole:</lable>
+        <lable  className="lable-name" >SlectRole:</lable>
         <br />
-        <select onChange={SelectRole}>
+        <select    className="input-style" onChange={SelectRole}>
           <option value="Buyer">Buyer:</option>
           <option value="Seller">Seller:</option>
         </select>
@@ -77,6 +77,7 @@ const Register = () => {
         />{" "}
         <br />
         <input className="submit-data" type="submit" value="Register" /> <br />
+        
       </form>
     </div>
   );

@@ -6,7 +6,7 @@
 
 .parent-1{
     width: 30%;
-    height: 450px;
+    /* height: 450px; */
     border: 1px solid black;
     margin: auto;
     background-color: pink;
@@ -23,12 +23,12 @@
 }
 .input-style{
     width: 60%;
-    height: 50px;
+    height: 40px;
     margin-left: 100px;
 }
 .submit-data{
     width: 50%;
-    height: 50px; 
+    height: 40px; 
     margin-top: 40px;
     background-color: black; 
     color: white;

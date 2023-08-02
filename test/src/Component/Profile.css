@@ -10,7 +10,7 @@
     background-color: pink;
     margin: auto;
     margin-top:20px ;
-    /* display: flex; */
+   
 }
 .main-div>h2{
     text-align: center;
@@ -37,4 +37,4 @@
     border-radius: 70px;
     color: white;
     background-color: red;
-}
+} 

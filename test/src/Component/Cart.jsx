@@ -92,7 +92,7 @@ const Cart = () => {
 
     const [finalPrice, setFinalPrice] = useState(0);
     const [userCart, setUserCart] = useState([]);
-
+    const router = useNavigate()
 
     console.log(userCart, "- userCart")
 
@@ -106,6 +106,17 @@ const Cart = () => {
             setFinalPrice(totalPrice)
         }
     }, [userCart])
+
+    useEffect(() =>{
+        const user = JSON.parse(localStorage.getItem("Current-user"))
+        if (user?.role  == "seller"){
+            alert("Access only to buyer")
+            // router("/")
+        }else{
+            alert("you are not a logged user")
+            router('/login')
+        }
+    },[])
 
     useEffect(() => {
         const user = JSON.parse(localStorage.getItem("Current-user"));
@@ -139,7 +150,6 @@ const Cart = () => {
         setUserCart([]);
         alert("Product will deliver soon, Thank you for shopping.")
     }
-
     return (
         <div>
             <div style={{ display: "flex", justifyContent: "space-around" }}>
@@ -151,7 +161,7 @@ const Cart = () => {
                         <div style={{ width: "22%", height: "700px", border: "2px solid black", padding: "30px" }}>
                             <img style={{ width: "100%", height: "500px" }} src={pro.image} />
                             <h3>Title : {pro.title}</h3>
-                            <h4>Price : {pro.price}</h4>
+                            <h4>Price : {pro.price}$ </h4>
                         </div>
                     ))}
                 </div>

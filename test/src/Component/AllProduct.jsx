@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AllProduct = () => {
   const [isProductsExist, setIsProductsExist] = useState(false);
   const [products, setProducts] = useState();
+  const router = useNavigate();
 
   console.log(products, "-products");
 
@@ -15,8 +17,13 @@ const AllProduct = () => {
       setIsProductsExist(false);
     }
   }, []);
+
+  const redirect = (id) =>{
+    // console.log(id,"-id")
+    router(`/single/${id}`)
+  }
   return (
-    <div>
+    <div  style={{width: "90%", margin:"auto"}}>
       {!isProductsExist ? (
         <div>No Product</div>
       ) : (

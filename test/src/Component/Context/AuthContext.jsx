@@ -20,7 +20,7 @@ export const Authprovider = ({children} )=>{
             payload:userData
         })
     }
-    function Logout(userData){
+    function Logout(){
         localStorage.removeItem("Current-User")
         dispatch ({
             type:"LOGOUT",

@@ -16,7 +16,7 @@ const Navbar = () => {
   // console.log(userData,"-userData")
   return (
     <div className='navbar'>
-      <div className='e-commers'>E-Commers</div>
+      <div onClick={()=>router('/')} className='e-commers'>E-Commers</div>
       <div className='Parent-first'>
    
        <div onClick={()=>router('/all-product')}>All Product</div> 

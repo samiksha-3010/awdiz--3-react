@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <div>Home{state?.user?.name}
     <button onClick={Logout}>Logout</button>
+    <img/>
     </div>
 
   )

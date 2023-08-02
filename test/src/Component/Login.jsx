@@ -69,9 +69,9 @@ const Login = () => {
         <br />
         <input className="submit-data" type="submit" value="login" />
       </form>
-      <button className="register-style" onClick={() => router("/register")}>
-        Register
-      </button>
+    <p className="register-style" onClick={() => router("/register")}>
+         clic here <span  style={{color: "red"}}> here new Register! ...</span>
+        </p>
     </div>
   );
 };

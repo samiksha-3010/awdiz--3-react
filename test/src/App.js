@@ -27,7 +27,7 @@ function App() {
       <Route exact path='/all-product'element={<AllProduct/>}/> 
       <Route exact path='/cart'element={<Cart/>}/> 
       <Route exact path='/ref'element={<Ref/>}/> 
-      <Route exact path='/single'element={<SinglePro/>}/> 
+      <Route exact path='/single/:id'element={<SinglePro/>}/> 
 
 
       </Routes>
