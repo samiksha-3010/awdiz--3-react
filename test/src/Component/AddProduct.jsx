@@ -39,7 +39,6 @@ function selectRole(event) {
             toast.error("you are not a seller user..")
             Router('/')
         }
-
         }else{
    toast.error("you are not Logged user..")
             Router('/login')
