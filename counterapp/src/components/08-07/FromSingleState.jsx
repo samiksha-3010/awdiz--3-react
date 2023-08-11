@@ -1,12 +1,4 @@
  
-
-
-
-
-
-
-
-
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -30,9 +22,9 @@ const FormSingleState = () => {
 
         setUserData({ name: "", email: "", password: "" })
         alert("Registeration Successfull...")
-        router('/');
+        router('/');              
     }
-    return (
+    return (  
         <div>
             <form onSubmit={handleSubmit}>
                 <lable>Name:</lable><br/>

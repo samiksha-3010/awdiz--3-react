@@ -24,7 +24,7 @@ function  Xyz(){
 
     const route = useNavigate();
     function goto(){
-        route ("'/single-product/:swaraj")
+        route ("'/single-product/:samikshaID")
     }
     return(
         <div> 

@@ -56,7 +56,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-
 const Params = () => {
     const router = useNavigate()
     function goto(){

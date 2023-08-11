@@ -38,13 +38,11 @@ const handleButtonClick= ()=>{
    backgroundColor('blue');
 }
    const styles ={
-      backgroundColor: backgroundColor,
+      backgroundColor: setBackgroundColor,
           color:'white',
           padding: '10px',
           borderRadius: '5px',
           cursor: 'pointer'
-
-   
 };
 
   return (

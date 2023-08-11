@@ -6,9 +6,13 @@ function SingleProduct() {
     console.log(data, "-data here")
     return (
         <div>
-            {data && data.swaraj}
+
+            {data && data.samiksha}
         </div>
     )
 }
 
 export default SingleProduct;
+
+
+

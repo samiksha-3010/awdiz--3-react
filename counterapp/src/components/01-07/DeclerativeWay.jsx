@@ -15,3 +15,5 @@ const DeclerativeWay = () => {
         </div>)
 }
 export default DeclerativeWay
+
+

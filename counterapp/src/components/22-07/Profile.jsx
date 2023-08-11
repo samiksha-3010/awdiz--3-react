@@ -53,7 +53,7 @@ const Profile = () => {
     <input type='text' value={userData.name} name="name" onChange={handleChange}/><br/>
     <lable>Change Password</lable><br/>
     <input type='text' value={userData.name} name="name" onChange={handleChange}/><br/>
-    <input type='submit'/>
+    <input type='submit' value='updates profile'  />
 </form>
 
     </div>
