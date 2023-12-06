@@ -5,6 +5,7 @@ import {useState} from 'react'
 
 const Counter = () => {
     const  [ Counter, setCounter]= useState(0);
+    const [state,setState] = useState(2)
     // console.log(Counter,"Counter")
     function add (){
        setCounter  ((prevalue) => prevalue + 1)
@@ -12,11 +13,22 @@ const Counter = () => {
     function subtrack(){
         setCounter ((prevalue) => prevalue - 1)
     }
+
+    function  Multiplication (){
+      setState((prevalue)=>prevalue * 2)
+    }
+    function  Divded (){
+      setState((prevalue)=>prevalue / 2)
+    }
   return (
     <div>
         <h1>Counter: {Counter}</h1>
-        <button onClick={add}>+ add by one samiksha</button>
-        <button onClick={subtrack}>- add by 1 tanu </button>
+        <h2>state:{state}</h2>
+        <button onClick={add}>+ add by one samiksha</button><br/>
+        <button onClick={subtrack}>- add by 1 tanu </button><br/>
+        <button onClick={Multiplication}> * Increment  By 2</button><br/>
+        <button onClick={Divded}> / Divded By 2</button>
+       
          
        
 
@@ -26,27 +38,3 @@ const Counter = () => {
 
 export default Counter;
 
-
-// import  { useState } from 'react'
-
-// const Counter = () => {
-//     const [counter, setCounter] = useState(0)
-//      console.log(counter, "setCounter")
-//      function add (){
-//         setCounter((prevalue) => prevalue + 1 )
-//         // function subtrack(){
-//         //     setCounter((prevalue) => prevalue - 1)
-//         // }
-
-
-//      }
-//   return (
-//     <div>
-//         <h1>Counter:{Counter}</h1>
-//         <button onClick={add}> add+1</button>
-//         {/* <button onClick={subtrack}>tanu- 1</button> */}
-//     </div>
-//   )
-// }
-
-// export default Counter

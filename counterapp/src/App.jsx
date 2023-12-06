@@ -35,6 +35,8 @@ import CartSection from './components/15-07/CartSection';
 import Pratice from './components/practice  -  18/Pratice';
 import Profile from './components/22-07/Profile';
 import Counter2 from './components/Counter2';
+import UseEffect from './components/SecondPratice/UseEffect';
+
 
  
 
@@ -81,10 +83,14 @@ function App() {
         <Route exact path='/pratice'element= {<Pratice/>} />
         <Route exact path='/counter2'element= {<Counter2/>} />
 
+
+      {/* ********************second Pratice******************** */}
+      <Route exact path='useEffectHook'element= {<UseEffect/>}/>
+
        
        
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
 
     </div>
   );
