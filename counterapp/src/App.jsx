@@ -34,6 +34,7 @@ import Register from './components/15-07/Register';
 import CartSection from './components/15-07/CartSection';
 import Pratice from './components/practice  -  18/Pratice';
 import Profile from './components/22-07/Profile';
+import Counter2 from './components/Counter2';
 
  
 
@@ -73,11 +74,12 @@ function App() {
         <Route exact path='/Type3UseEffect' element={<Type3UseEffect />} />
         <Route exact path='/Type2UseEffect' element={<Type2UseEffect />} />
         <Route exact path='/Type1UseEffect' element={<Type1UseEffect />} />
-        <Route exact path='/changeSection' element={<Section />} />
-        <Route exact path='/counter' element={<Counter />} />
-        <Route exact path='/home' element={<Home />} />
-        <Route exact path='/welcome' element={<Welcome />} />
+        <Route exact path='/changeSection' element={<Section/>} />
+        <Route exact path='/counter' element={<Counter/>} />
+        <Route exact path='/home' element={<Home />}/>
+        <Route exact path='/welcome' element={<Welcome />}/>
         <Route exact path='/pratice'element= {<Pratice/>} />
+        <Route exact path='/counter2'element= {<Counter2/>} />
 
        
        
