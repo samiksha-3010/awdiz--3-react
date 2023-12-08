@@ -8,8 +8,6 @@ function Navbar(){
     // console.log(state,"state from context in navbar")
     const  [User, setUser] = useState ({});
     const router = useNavigate ();
-
-    
     // useEffect  (() =>{
     //     const isUserPresent = JSON.parse (localStorage.getItem ("Current-user"));
     //     if(isUserPresent){

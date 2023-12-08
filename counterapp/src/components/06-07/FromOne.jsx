@@ -84,16 +84,6 @@ const FromOne = () => {
 export default FromOne;
 
 
-// import React from 'react'
-
-// const FromOne = () => {
-//   return (
-//     <div>FromOne</div>
-//   )
-// }
-
-// export default FromOne
-
 
 
 

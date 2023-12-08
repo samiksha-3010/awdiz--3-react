@@ -8,7 +8,6 @@ function Type4UseEffect() {
 
     const router = useNavigate();   
     useEffect(() => {
-
         // it will Excute the code on intainal Render og component
         // it Will Excute the code on any depedency change
         console.log("Inside effect")
@@ -33,24 +32,4 @@ function Type4UseEffect() {
 export default Type4UseEffect;
 
 
-// import React, { useState } from 'react'
 
-// const Type4UseEffect = () => {
-//     const [ counter1, setCounter1] =useState (10);
-//     const [ counter2, SetCounter2] =useState (30);
-//     const [ counter3, setCounter3] =useState (50);
-    
-//   return (
-//     <div>
-//         <h2>Type4UseEffect</h2>
-//         <h3>Redirect to Login</h3>
-//         <h3>Counter1 : {Counter}</h3>
-//         <button>+ 1 for Counter 1</button>
-//         <h3>Counter2 : {Counter}</h3>
-//         <button>+ 2 for Counter 1</button>
-//         <h3>Counter3 : {Counter}</h3>
-//         <button>+ 3 for Counter 1</button>
-//     </div>
-//   )
-// }
-// export default Type4UseEffect

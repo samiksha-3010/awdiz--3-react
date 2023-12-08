@@ -17,7 +17,7 @@
 // import React from 'react'
 // import { useNavigate } from 'react-router-dom'
 
-// const Params = () => {
+// con st Params = () => {
 //     const router = useNavigate ();
 //     function go (){
 //         router ('./samiksha-poohu-pooja/354')

@@ -1,5 +1,4 @@
 import React from 'react';
-// const myData = require('./../../../data/myProducts.json');
 import myData from './../../data/Myproduct.json'
 
 const DeclerativeWay = () => {
