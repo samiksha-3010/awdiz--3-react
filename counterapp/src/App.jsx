@@ -35,7 +35,18 @@ import CartSection from './components/15-07/CartSection';
 import Pratice from './components/practice  -  18/Pratice';
 import Profile from './components/22-07/Profile';
 import Counter2 from './components/Counter2';
+
+// *****************
 import UseEffect from './components/SecondPratice/UseEffect';
+import UseEffect2 from './components/SecondPratice/UseEffect2';
+import UseEffect3 from './components/SecondPratice/UseEffect3';
+import UseEffect4 from './components/SecondPratice/UseEffect4';
+import UseParam from './components/SecondPratice/UseParam';
+import DynamicRouting from './components/SecondPratice/DynamicRouting';
+// import UseEffect from './components/SecondPratice/UseEffect2';
+
+
+
 
 
  
@@ -81,14 +92,22 @@ function App() {
         <Route exact path='/home' element={<Home />}/>
         <Route exact path='/welcome' element={<Welcome />}/>
         <Route exact path='/pratice'element= {<Pratice/>} />
-        <Route exact path='/counter2'element= {<Counter2/>} />
 
 
       {/* ********************second Pratice******************** */}
+      <Route exact path='/counter2'element= {<Counter2/>} />
       <Route exact path='useEffectHook'element= {<UseEffect/>}/>
+      <Route exact path='useEffect2'element= {<UseEffect2/>}/>
+      <Route exact path='useEffect3'element={<UseEffect3/>}/>
+      <Route exact path='useEffect4'element={<UseEffect4/>}/>
+      <Route exact path='UseParams/:name'element={<UseParam/>}/>
+      <Route exact path='Dynamic-Routing'element={<DynamicRouting/>}/>
 
-       
-       
+      DynamicRouting
+
+
+
+  
       </Routes>
       <Footer/>
 
