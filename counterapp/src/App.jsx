@@ -37,12 +37,28 @@ import Profile from './components/22-07/Profile';
 import Counter2 from './components/Counter2';
 
 // *****************
+
 import UseEffect from './components/SecondPratice/UseEffect';
 import UseEffect2 from './components/SecondPratice/UseEffect2';
 import UseEffect3 from './components/SecondPratice/UseEffect3';
 import UseEffect4 from './components/SecondPratice/UseEffect4';
 import UseParam from './components/SecondPratice/UseParam';
 import DynamicRouting from './components/SecondPratice/DynamicRouting';
+import StyleComponenet from './components/SecondPratice/StyleComponenet';
+import PropsMaps from './components/SecondPratice/PropsMaps';
+import MapObject from './components/SecondPratice/MapObject';
+
+function App() {
+
+  const [myName, setMyName] = useState("Awdiz")
+
+  const [students, setStudents] = useState([{ image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs1wQLZqIhYASivJhwDTSzAD7sN-N9w-3sCQKc4XrV8wIgFwsB-Sb_RRqKe3akMfSPxiA&usqp=CAU', name: "virat", marks: "100" }, { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs1wQLZqIhYASivJhwDTSzAD7sN-N9w-3sCQKc4XrV8wIgFwsB-Sb_RRqKe3akMfSPxiA&usqp=CAU", name: "rahul", marks: "100" }, { name: "rohit", marks: "100", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs1wQLZqIhYASivJhwDTSzAD7sN-N9w-3sCQKc4XrV8wIgFwsB-Sb_RRqKe3akMfSPxiA&usqp=CAU" }]);
+
+
+  function ChangeName() {
+    setMyName("Awdiz Institute.")
+  }
+}
 // import UseEffect from './components/SecondPratice/UseEffect2';
 
 
@@ -102,6 +118,9 @@ function App() {
       <Route exact path='useEffect4'element={<UseEffect4/>}/>
       <Route exact path='UseParams/:name'element={<UseParam/>}/>
       <Route exact path='Dynamic-Routing'element={<DynamicRouting/>}/>
+      <Route exact path='style-componenent' element={<StyleComponenet/>}/>
+      <Route exact path='Props-Maps'element={<PropsMaps  kuchbhi={myName} myAge="25" ChangeName={ChangeName} myStudents={["krish", "jay", "shahbaj", "shrusti", "adesh"]}/>}/>
+      <Route exact path='Map-Object'element={<MapObject myStudentsData={students}/>}/>
 
       DynamicRouting
 
