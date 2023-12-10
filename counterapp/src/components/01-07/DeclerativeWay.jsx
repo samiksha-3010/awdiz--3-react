@@ -11,8 +11,6 @@ const DeclerativeWay = () => {
                     <h2>Price : {product.price} Rs.</h2>
                 </div>
             ))}
-
-            
         </div>)
 }
 export default DeclerativeWay

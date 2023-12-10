@@ -45,7 +45,6 @@ function Home(){
         // <>
         <div style={{textAlign: 'center'}}>
           <h1>This is a Awdiz Store </h1>
-          {/* <img style={{height: '10%',width: '50%'}} src='https://tse1.mm.bing.net/th?id=OIP.0E2rT394d7tQ9MymGH8mTgHaE8&pid=Api&rs=1&c=1&qlt=95&w=183&h=122'/> */}
          <div>
           { isUserLoggedIn  ? <button onClick={()=>logout()}>Logout</button>: <button onClick={()=>router('/login')}>Login</button>}
         </div>
@@ -77,19 +76,3 @@ export default Home;
 
 
 
-
-// import React from 'react'
-
-// const Home = () => {
-//   return (
-//     <div>
-//         <h1  style={{color:'red'}}>Home Page</h1>
-//         <img style={{height: '10%',width: '50%'}} src='https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
-       
-
-
-//     </div>
-//   )
-// }
-
-// export default Home;

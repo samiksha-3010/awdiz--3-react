@@ -1,16 +1,20 @@
+
+
+
+
 import React from 'react'
+// import style from style-componenent;
 
-const StyleComponent = () => {
-
-//     const MyComponent = styled.div`
-//     color : red;
-//     font-size : 40px;
-//     `;
-
-    return (
-      <div></div>
-      //   <MyComponent>StyledComponent</MyComponent>
-    )
+const StyleComponenet = () => {
+    //   const MyComponent = style.div`
+    // color : red;
+    // font-size : 40px;
+    // `;
+  return (
+    <div></div>
+    // <MyComponent>StyleComponenet</MyComponent>
+    
+  )
 }
 
-export default StyleComponent
+export default StyleComponenet

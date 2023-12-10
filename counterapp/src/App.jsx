@@ -47,31 +47,27 @@ import DynamicRouting from './components/SecondPratice/DynamicRouting';
 import StyleComponenet from './components/SecondPratice/StyleComponenet';
 import PropsMaps from './components/SecondPratice/PropsMaps';
 import MapObject from './components/SecondPratice/MapObject';
+import { useState } from 'react';
+import SimRegister from './components/SecondPratice/SimRegister';
+import ChildrenProp from './components/SecondPratice/ChildrenProp';
+import NewJs from './components/SecondPratice/NewJs';
+
+
+
 
 function App() {
 
   const [myName, setMyName] = useState("Awdiz")
 
-  const [students, setStudents] = useState([{ image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs1wQLZqIhYASivJhwDTSzAD7sN-N9w-3sCQKc4XrV8wIgFwsB-Sb_RRqKe3akMfSPxiA&usqp=CAU', name: "virat", marks: "100" }, { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs1wQLZqIhYASivJhwDTSzAD7sN-N9w-3sCQKc4XrV8wIgFwsB-Sb_RRqKe3akMfSPxiA&usqp=CAU", name: "rahul", marks: "100" }, { name: "rohit", marks: "100", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs1wQLZqIhYASivJhwDTSzAD7sN-N9w-3sCQKc4XrV8wIgFwsB-Sb_RRqKe3akMfSPxiA&usqp=CAU" }]);
+  const [students, setStudents] = useState([{ image: 'https://tse1.mm.bing.net/th?id=OIP.28tvLRfNAgTmALJp7o57bwHaF0&pid=Api&rs=1&c=1&qlt=95&w=132&h=103', name: "virat", marks: "100" }, { image: "https://s.yimg.com/fz/api/res/1.2/hMmXrvHx_kWJG0uSrcMGrA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MTcy/https://s.yimg.com/zb/imgv1/dad4cd93-1f95-3b78-9ced-7aaab5099e35/t_500x300", name: "rahul", marks: "100" }, { name: "rohit", marks: "100",  image: "https://tse1.mm.bing.net/th?id=OIP.Ax7Yqbk7_U0Xju4GgiGuhgHaEK&pid=Api&rs=1&c=1&qlt=95&w=182&h=102" }]);
 
 
   function ChangeName() {
     setMyName("Awdiz Institute.")
   }
-}
+
 // import UseEffect from './components/SecondPratice/UseEffect2';
 
-
-
-
-
- 
-
-
-
-
-function App() {
-  console.log("inside app")
   return (
     <div>
         <Navbar/>
@@ -111,6 +107,7 @@ function App() {
 
 
       {/* ********************second Pratice******************** */}
+
       <Route exact path='/counter2'element= {<Counter2/>} />
       <Route exact path='useEffectHook'element= {<UseEffect/>}/>
       <Route exact path='useEffect2'element= {<UseEffect2/>}/>
@@ -119,16 +116,22 @@ function App() {
       <Route exact path='UseParams/:name'element={<UseParam/>}/>
       <Route exact path='Dynamic-Routing'element={<DynamicRouting/>}/>
       <Route exact path='style-componenent' element={<StyleComponenet/>}/>
-      <Route exact path='Props-Maps'element={<PropsMaps  kuchbhi={myName} myAge="25" ChangeName={ChangeName} myStudents={["krish", "jay", "shahbaj", "shrusti", "adesh"]}/>}/>
+      <Route exact path='Props-Maps'element={<PropsMaps  kuchbhi={myName} myAge="25" ChangeName={ChangeName} myStudents={["samiksha", "tanu", "pooh", "pooja", "nidhi"]}/>}/>
       <Route exact path='Map-Object'element={<MapObject myStudentsData={students}/>}/>
+      <Route exact path='simple-register'element={<SimRegister/>}/>
+      <Route exact path='simple-register'element={<SimRegister/>}/>
+      <Route exact path='Children-Prop-new'element={<ChildrenProp/>}/>
+      <Route exact path='New-Js'element={<NewJs/>}/>
 
-      DynamicRouting
 
 
 
-  
+      jsFile
+
+
+
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
 
     </div>
   );
