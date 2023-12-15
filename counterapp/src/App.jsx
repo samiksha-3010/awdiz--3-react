@@ -2,7 +2,7 @@ import './App.css';
 
 import Navbar from "./components/Navbar"
 import Welcome from './components/Welcome';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Home from './components/Home';
 import Counter from './components/Counter';
 import Section from './components/Section';
@@ -51,6 +51,9 @@ import { useState } from 'react';
 import SimRegister from './components/SecondPratice/SimRegister';
 import ChildrenProp from './components/SecondPratice/ChildrenProp';
 import NewJs from './components/SecondPratice/NewJs';
+import SimpleLogin from './components/SecondPratice/SimpleLogin';
+import HomeNew from './components/SecondPratice/HomeNew';
+import NavbarNew from './components/SecondPratice/NavbarNew';
 
 
 
@@ -101,13 +104,13 @@ function App() {
         <Route exact path='/Type1UseEffect' element={<Type1UseEffect />} />
         <Route exact path='/changeSection' element={<Section/>} />
         <Route exact path='/counter' element={<Counter/>} />
-        <Route exact path='/home' element={<Home />}/>
+        <Route exact path='/home' element={<Home/>}/>
         <Route exact path='/welcome' element={<Welcome />}/>
         <Route exact path='/pratice'element= {<Pratice/>} />
 
 
       {/* ********************second Pratice******************** */}
-
+      <Route exact path='/home-second'element= {<HomeNew/>} />
       <Route exact path='/counter2'element= {<Counter2/>} />
       <Route exact path='useEffectHook'element= {<UseEffect/>}/>
       <Route exact path='useEffect2'element= {<UseEffect2/>}/>
@@ -122,12 +125,14 @@ function App() {
       <Route exact path='simple-register'element={<SimRegister/>}/>
       <Route exact path='Children-Prop-new'element={<ChildrenProp/>}/>
       <Route exact path='New-Js'element={<NewJs/>}/>
+      <Route exact path='simple-login'element={<SimpleLogin/>}/>
+      <Route exact path='simple-Navbar'element={<NavbarNew/>}/>
 
 
 
 
-      jsFile
 
+   
 
 
       </Routes>
