@@ -2,21 +2,34 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import toast from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
+import "./StyleSecond/SimpleLogin.css"
 
 const SimpleLogin = () => {
   const [loginData, setLoginData] = useState({ email: "", password: "" });
-    console.log(loginData, "loginData")
+    // console.log(loginData, "loginData")
     const router = useNavigate();
     function handleChange(e) {
         // console.log(e.target.value)
         setLoginData({ ...loginData, [e.target.name]: e.target.value })
     }
+    // ****poupop*****
+
+    let  popup = document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+        
+    }
+    function closepopup(){
+        popup.classList.remove("open-popup");
+        
+    }
+
     async function handleSubmit(e) {
         e.preventDefault();
         if (loginData.email && loginData.password) {
             try {
                 // const response = await axios.post('http://localhost:8000/login', { loginData })
-                const response = { data: { success: true, message: "Login Successfull." } }
+                const response = { data: { success: true, message: "'Your Detail has been successfully Submit  Thanks!'." } }
                 if (response.data.success) {
                     toast.success(response.data.message)
                     setLoginData({ email: "", password: "" })
@@ -39,8 +52,11 @@ const SimpleLogin = () => {
                 <input type='email' required onChange={handleChange} name='email' value={loginData.email} /><br />
                 <label> User Password*</label><br />
                 <input type='password' required onChange={handleChange} name='password' value={loginData.password} /><br />
-                <input type='submit' value='Login' />
+                <input type='submit' value="Login" />
+ 
+          
             </form>
+            
         </div>
   )
 }
