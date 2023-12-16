@@ -12,17 +12,6 @@ const SimpleLogin = () => {
         // console.log(e.target.value)
         setLoginData({ ...loginData, [e.target.name]: e.target.value })
     }
-    // ****poupop*****
-
-    let  popup = document.getElementById("popup");
-    function openPopup(){
-        popup.classList.add("open-popup");
-        
-    }
-    function closepopup(){
-        popup.classList.remove("open-popup");
-        
-    }
 
     async function handleSubmit(e) {
         e.preventDefault();

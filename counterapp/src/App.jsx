@@ -54,6 +54,8 @@ import NewJs from './components/SecondPratice/NewJs';
 import SimpleLogin from './components/SecondPratice/SimpleLogin';
 import HomeNew from './components/SecondPratice/HomeNew';
 import NavbarNew from './components/SecondPratice/NavbarNew';
+import ChildToParent from './components/SecondPratice/StyleSecond/ChildToParent';
+import AllProduct from './components/SecondPratice/StyleSecond/AllProduct';
 
 
 
@@ -127,6 +129,9 @@ function App() {
       <Route exact path='New-Js'element={<NewJs/>}/>
       <Route exact path='simple-login'element={<SimpleLogin/>}/>
       <Route exact path='simple-Navbar'element={<NavbarNew/>}/>
+      <Route exact path='Child-To-Parent'element={<ChildToParent/>}/>
+      <Route exact path='All-Product'element={<AllProduct/>}/>
+
 
 
 
