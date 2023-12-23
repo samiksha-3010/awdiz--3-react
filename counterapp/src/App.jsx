@@ -56,6 +56,8 @@ import HomeNew from './components/SecondPratice/HomeNew';
 import NavbarNew from './components/SecondPratice/NavbarNew';
 import ChildToParent from './components/SecondPratice/StyleSecond/ChildToParent';
 import AllProduct from './components/SecondPratice/StyleSecond/AllProduct';
+import SinglePro2 from './components/SecondPratice/SinglePro2';
+import UseMemo2 from './components/SecondPratice/UseMemo2';
 
 
 
@@ -131,6 +133,11 @@ function App() {
       <Route exact path='simple-Navbar'element={<NavbarNew/>}/>
       <Route exact path='Child-To-Parent'element={<ChildToParent/>}/>
       <Route exact path='All-Product'element={<AllProduct/>}/>
+      <Route exact path='Single-Pro2'element={<SinglePro2/>}/>
+      <Route exact path=' Use-Memo2'element={< UseMemo2/>}/>
+
+
+     
 
 
 
