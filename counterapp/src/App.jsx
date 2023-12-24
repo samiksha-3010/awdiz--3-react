@@ -56,8 +56,9 @@ import HomeNew from './components/SecondPratice/HomeNew';
 import NavbarNew from './components/SecondPratice/NavbarNew';
 import ChildToParent from './components/SecondPratice/StyleSecond/ChildToParent';
 import AllProduct from './components/SecondPratice/StyleSecond/AllProduct';
-import SinglePro2 from './components/SecondPratice/SinglePro2';
-import UseMemo2 from './components/SecondPratice/UseMemo2';
+import SinglePro2 from './components/SecondPratice/SinglePro2';import TodoSecond from './components/SecondPratice/TodoSecond';
+import UseCallBack2 from './components/SecondPratice/UseCallBack2';
+import UseMemoNew from './components/SecondPratice/UseMemoNew';
 
 
 
@@ -114,6 +115,7 @@ function App() {
 
 
       {/* ********************second Pratice******************** */}
+      
       <Route exact path='/home-second'element= {<HomeNew/>} />
       <Route exact path='/counter2'element= {<Counter2/>} />
       <Route exact path='useEffectHook'element= {<UseEffect/>}/>
@@ -133,8 +135,13 @@ function App() {
       <Route exact path='simple-Navbar'element={<NavbarNew/>}/>
       <Route exact path='Child-To-Parent'element={<ChildToParent/>}/>
       <Route exact path='All-Product'element={<AllProduct/>}/>
-      <Route exact path='Single-Pro2'element={<SinglePro2/>}/>
-      <Route exact path=' Use-Memo2'element={< UseMemo2/>}/>
+      <Route exact path='Single-Pro2/:id'element={<SinglePro2/>}/>
+      <Route exact path='Use-Memo-second'element={< UseMemoNew/>}/>
+      <Route exact path='Todo-Second'element={< TodoSecond/>}/>
+      <Route exact path='UseCallBack-second'element={< UseCallBack2/>}/>
+
+
+
 
 
      

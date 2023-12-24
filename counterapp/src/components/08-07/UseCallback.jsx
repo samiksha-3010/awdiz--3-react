@@ -4,11 +4,11 @@ import Todos from './Todos';
 
 const UseCallback =() => {
 
-    const[ todos, setTodos] = useState(["eat", "lunch"]);
+    const[ todos, setTodos] = useState([]);
     const [counter, setCounter] = useState(0);
 
     const addTodo = useCallback(() => {
-        setTodos([...todos, "come in"])
+        setTodos([...todos, "Add New Todo"])
     }, [todos])
     
   return (
