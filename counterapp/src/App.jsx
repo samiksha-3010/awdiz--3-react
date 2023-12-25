@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar"
 import Welcome from './components/Welcome';
 // import Footer from './components/Footer';
 import Home from './components/Home';
-import Counter from './components/Counter';
+import Counter from './components/Counter2';
 import Section from './components/Section';
 import { Route, Routes } from 'react-router-dom';
 import Type1UseEffect from './components/Type1UseEffect';
@@ -59,17 +59,14 @@ import AllProduct from './components/SecondPratice/StyleSecond/AllProduct';
 import SinglePro2 from './components/SecondPratice/SinglePro2';import TodoSecond from './components/SecondPratice/TodoSecond';
 import UseCallBack2 from './components/SecondPratice/UseCallBack2';
 import UseMemoNew from './components/SecondPratice/UseMemoNew';
-
-
-
+import UseReducerHook from './components/SecondPratice/UseReducerHook';
+import Steap from './components/SecondPratice/Steap';
 
 function App() {
 
   const [myName, setMyName] = useState("Awdiz")
 
   const [students, setStudents] = useState([{ image: 'https://tse1.mm.bing.net/th?id=OIP.28tvLRfNAgTmALJp7o57bwHaF0&pid=Api&rs=1&c=1&qlt=95&w=132&h=103', name: "virat", marks: "100" }, { image: "https://s.yimg.com/fz/api/res/1.2/hMmXrvHx_kWJG0uSrcMGrA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MTcy/https://s.yimg.com/zb/imgv1/dad4cd93-1f95-3b78-9ced-7aaab5099e35/t_500x300", name: "rahul", marks: "100" }, { name: "rohit", marks: "100",  image: "https://tse1.mm.bing.net/th?id=OIP.Ax7Yqbk7_U0Xju4GgiGuhgHaEK&pid=Api&rs=1&c=1&qlt=95&w=182&h=102" }]);
-
-
   function ChangeName() {
     setMyName("Awdiz Institute.")
   }
@@ -139,6 +136,12 @@ function App() {
       <Route exact path='Use-Memo-second'element={< UseMemoNew/>}/>
       <Route exact path='Todo-Second'element={< TodoSecond/>}/>
       <Route exact path='UseCallBack-second'element={< UseCallBack2/>}/>
+      <Route exact path='UseCallBack-second'element={< UseCallBack2/>}/>
+      <Route exact path='Use-Reducer-Hook'element={<UseReducerHook/>}/>
+      <Route exact path='Steap'element={<Steap/>}/>
+
+
+
 
 
 
