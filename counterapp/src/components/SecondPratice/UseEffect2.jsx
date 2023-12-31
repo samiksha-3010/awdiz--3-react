@@ -11,8 +11,6 @@ const UseEffect2 = () => {
             alert("Hii From UseEffect")
       },[])
 
-
-
   return (
     <div>
       <h2 style={{color:"red"}}>UseEffect</h2>
